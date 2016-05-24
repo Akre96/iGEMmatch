@@ -22,7 +22,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
-		<?php echo $cakeDescription ?>:
+		<?php echo 'iGemMatch.org'; echo " ";?>
 		<?php echo $this->fetch('title'); ?>
 	</title>
 	<?php
