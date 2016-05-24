@@ -38,7 +38,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <body>
 	<div id="container">
 		<div id="header">
-			<h1>iGemMatch.org</h1>
+			<h1><?php $this->Html->link('iGemMatch.org','http://www.igemmatch.org') ?></h1>
 		</div>
 		<div id="content">
 
