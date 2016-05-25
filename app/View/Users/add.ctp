@@ -8,7 +8,7 @@
 		echo $this->Form->input('password');
 		echo $this->Form->input('email');
 		echo $this->Form->input('phone');
-		echo $this->Form->input('category_id');
+		echo $this->Form->hidden('category_id');
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>

@@ -80,7 +80,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			  </div><!-- /.container-fluid -->
 			</nav>		
 		</header>
-		<div id="content">
+		<div class = "container" id="content">
 
 			<?php echo $this->Flash->render(); ?>
 

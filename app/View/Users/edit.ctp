@@ -10,8 +10,12 @@
 		echo $this->Form->hidden('email');
 		echo $this->Form->hidden('phone');
 		echo $this->Form->input('category_id');
+
+		echo $this->Html->link('Add Category','http://igemmatch.org/categories/add')
 	?>
+
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
+
 </div>
 
