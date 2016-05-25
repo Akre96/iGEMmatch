@@ -9,3 +9,10 @@
     /* inline-block space fix */
     margin-right:-4px;
 }
+
+.catCont
+{
+	border:2px 0;
+	border-color: red;
+	border-radius: 5px;
+}
