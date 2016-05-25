@@ -18,11 +18,14 @@
 	border-radius: 5px;
 }
 
-h1{
+h1,h2{
 	font-family: 'Poiret One', cursive;
+
+}
+
+h1{
 	color: #FE1C03;
 	padding: 5px;
-
 }
 h1 a{
 	color: #FE1C03;
@@ -33,7 +36,7 @@ h1 a{
 h1 a:hover
 {
 	text-decoration: none;
-	border: 2px solid #FF0D02;
+	border: 1px solid #FF0D02;
 	color: #FF0D02;
 
 }
