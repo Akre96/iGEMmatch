@@ -39,6 +39,20 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<div id="container">
 		<div id="header">
 			<h1><?php echo $this->Html->link('iGemMatch.org','http://www.igemmatch.org'); ?></h1>
+			<ul>
+				<?php
+				if($this->Session->check('Auth.User'))
+				{				
+					echo '<li>';echo $this->Html->link('logout', 'http://igemmatch.org/users/logout');echo '</li>';
+					echo '<li>';echo $this->Html->link('change category', 'http://igemmatch.org/users/edit/'.$this->Session->Auth->User['id']);echo '</li>';
+				}
+				else
+				{
+				echo '<li>';echo $this->Html->link('login', 'http://igemmatch.org/users/login');echo '</li>';
+				echo '<li>';echo $this->Html->link('sign up', 'http://igemmatch.org/users/add');echo '</li>';
+				}
+				?>
+			</ul>			
 		</div>
 		<div id="content">
 
