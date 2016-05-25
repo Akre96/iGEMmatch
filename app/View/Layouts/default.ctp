@@ -37,6 +37,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		echo $this->fetch('css');
 		echo $this->fetch('script');
 	?>
+	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <div class="container-fluid">
