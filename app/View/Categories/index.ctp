@@ -9,7 +9,7 @@
 		{
 			foreach($cat['User'] as $users)
 			{
-				echo "<h4> "$users['team']."</h4><br/>";
+				echo "<h4> ".$users['team']."</h4><br/>";
 			}
 		}
 	}
