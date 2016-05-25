@@ -103,6 +103,6 @@ class CategoriesController extends AppController {
 	}
 	public function home()
 	{
-		
+		$this->layout="home";
 	}
 }
