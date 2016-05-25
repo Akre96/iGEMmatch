@@ -19,4 +19,12 @@
 }
 h1{
 	font-family: 'Poiret One', cursive;
+	color: #FE1C03;
+}
+
+h1 a:hover
+{
+	text-decoration: none;
+	border: 1px solid #FF0D02;
+	color: #FF0D02;
 }
