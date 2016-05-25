@@ -28,7 +28,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<?php
 		echo $this->Html->meta('icon');
 
-		echo $this->Html->css('cake.generic');
+//		echo $this->Html->css('cake.generic');
 		echo $this->Html->css('bootstrap.min.css');
 		echo $this->Html->script('jquery-2.2.4.min.js');
 		echo $this->Html->script('bootstrap.min.js');
@@ -38,7 +38,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	?>
 </head>
 <body>
-	<div id="container">
+	<div class="container">
 		<div id="header">
 			<h1><?php echo $this->Html->link('iGemMatch.org','http://igemmatch.org'); ?></h1>
 			<ul>
