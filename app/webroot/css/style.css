@@ -17,9 +17,10 @@
 	border-color: red;
 	border-radius: 5px;
 }
+
 h1{
 	font-family: 'Poiret One', cursive;
-	color: #FE1C03;
+	color: #FE1C03 !important;
 }
 
 h1 a:hover
