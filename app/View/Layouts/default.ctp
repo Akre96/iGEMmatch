@@ -43,7 +43,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 				<?php
 				if($this->Session->check('Auth.User'))
 				{				
-					echo '<li'.$this->Session->read('Auth.User.team').'</li>';
+					echo '<li>'.$this->Session->read('Auth.User.team').'</li>';
 					echo '<li>';echo $this->Html->link('logout', 'http://igemmatch.org/users/logout');echo '</li>';
 					echo '<li>';echo $this->Html->link('change category', 'http://igemmatch.org/users/edit/'.$this->Session->read('Auth.User.id'));echo '</li>';
 				}
