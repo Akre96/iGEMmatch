@@ -77,7 +77,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			    </div><!-- /.navbar-collapse -->
 			  </div><!-- /.container-fluid -->
 			</nav>		
-		<div class = "container" id="content">
+		<div class = "container-fluid" id="content">
 
 			<?php echo $this->Flash->render(); ?>
 
