@@ -38,7 +38,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <body>
 	<div id="container">
 		<div id="header">
-			<h1><?php echo $this->Html->link('iGemMatch.org','http://www.igemmatch.org'); ?></h1>
+			<h1><?php echo $this->Html->link('iGemMatch.org','http://igemmatch.org'); ?></h1>
 			<ul>
 				<?php
 				if($this->Session->check('Auth.User'))
