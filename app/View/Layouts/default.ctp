@@ -38,9 +38,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	?>
 </head>
 <body>
-	<div class="container-fluid">
+<div class="container-fluid">
 	<h1><?php echo $this->Html->link('iGemMatch.org','http://igemmatch.org'); ?><small> Find the iGem collaboration of your dreams</small></h1>
-			<ul>
 			<nav class="navbar navbar-default">
 			  <div class="container-fluid">
 			    <!-- Brand and toggle get grouped for better mobile display -->
