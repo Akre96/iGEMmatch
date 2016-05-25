@@ -103,6 +103,8 @@ class CategoriesController extends AppController {
 	}
 	public function home()
 	{
+		$cats = $this->Category->find('all');
+		$this->set('categories',$cats);
 		//$this->layout="home";
 	}
 }
