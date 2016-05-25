@@ -41,8 +41,13 @@ class AppController extends Controller {
             'logoutRedirect' => array(
                 'controller' => 'categories',
                 'action' => 'index',
-            ))
-
+            ),
+            'authenticate' => array(
+                'Form' => array(
+                    'passwordHasher' => 'Blowfish'
+                )
+            )
+        )
     );
 
     public function beforeFilter() {
