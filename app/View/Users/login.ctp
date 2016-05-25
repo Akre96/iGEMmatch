@@ -7,11 +7,13 @@
         </legend>
         <?php echo $this->Form->input('username',array(
         	'div' => array('class' => 'form-group'),
- 			'label' => 'Username'
+ 			'label' => 'Username',
+ 			'class' => 'form-control'
         	));
         echo $this->Form->input('password',array(
         	'div' => array('class' => 'form-group'),
- 			'label' => 'Password'
+ 			'label' => 'Password',
+ 			'class' => 'form-control'
         	));
     ?>
     </fieldset>
