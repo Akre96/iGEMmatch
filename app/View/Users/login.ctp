@@ -12,7 +12,7 @@
         echo $this->Form->input('password',array(
         	'div' => array('class' => 'form-group'),
  			'label' => 'Password'
-        	)););
+        	));
     ?>
     </fieldset>
 <?php echo $this->Form->end(__('Login'),array('class'=>'btn btn-default')); ?>
