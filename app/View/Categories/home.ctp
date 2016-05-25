@@ -7,7 +7,7 @@
 
 <div class = "row row-centered" id = "categoryHome">
 <?php foreach($categories as $cat): ?>
-<div class = "col-xs-3 col-centered" id = "catCont">
+<div class = "col-xs-3 col-centered catCont">
 	<h2><?php echo $cat['Category']['name']?></h2>
 </div>
 
