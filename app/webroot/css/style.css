@@ -12,7 +12,8 @@
 
 .catCont
 {
-	border:2px 0;
+	border-left:2px; 
+	border-right: 2px;
 	border-color: red;
 	border-radius: 5px;
 }
