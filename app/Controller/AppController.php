@@ -33,6 +33,8 @@ App::uses('Controller', 'Controller');
 class AppController extends Controller {
     public $components = array(
         'Flash',
+        'Session',
+        'DebugKit',
         'Auth' => array(
             'loginRedirect' => array(
                 'controller' => 'categories',
