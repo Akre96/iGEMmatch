@@ -33,6 +33,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		echo $this->Html->css('style.css');
 		echo $this->Html->script('jquery-2.2.4.min.js');
 		echo $this->Html->script('bootstrap.min.js');
+		echo $this->Html->script('style.js');		
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
@@ -41,7 +42,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 </head>
 <body>
 <div class="container-fluid">
-	<h1><?php echo $this->Html->link('iGemMatch.org','http://igemmatch.org'); ?><small> Find the iGem collaboration of your dreams</small></h1>
+	<h1 id = "title"><?php echo $this->Html->link('iGemMatch.org','http://igemmatch.org'); ?><small> Find the iGem collaboration of your dreams</small></h1>
 			<nav class="navbar navbar-default">
 			  <div class="container-fluid">
 			    <!-- Brand and toggle get grouped for better mobile display -->
