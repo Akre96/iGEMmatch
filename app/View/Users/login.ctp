@@ -17,5 +17,5 @@
         	));
     ?>
     </fieldset>
-<?php echo $this->Form->end(__('Login'),array('class'=>'btn btn-default')); ?>
+<?php echo $this->Form->end(array('label'=>'Login','class'=>'btn btn-default')); ?>
 </div>
