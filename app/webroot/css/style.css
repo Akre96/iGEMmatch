@@ -27,6 +27,8 @@ h1{
 }
 h1 a{
 	color: #FE1C03;
+	transition: border 2s, color 2s;
+	-webkit-transition: border 2s, color 2s;
 
 }
 
