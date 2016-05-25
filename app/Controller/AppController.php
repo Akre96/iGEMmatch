@@ -42,12 +42,7 @@ class AppController extends Controller {
                 'controller' => 'categories',
                 'action' => 'index',
             ),
-            'authenticate' => array(
-                'Form' => array(
-                    'passwordHasher' => 'Blowfish'
-                )
-            )
-        )
+
     );
 
     public function beforeFilter() {
