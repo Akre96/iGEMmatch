@@ -21,22 +21,19 @@
 h1{
 	font-family: 'Poiret One', cursive;
 	color: #FE1C03;
-	padding: 2px;
-	transition: border 2s, color 2s;
-	-webkit-transition: border 2s, color 2s;
+	padding: 5px;
+
 }
 h1 a{
 	color: #FE1C03;
-	transition: border 2s, color 2s;
-	-webkit-transition: border 2s, color 2s;
+
 
 }
 
 h1 a:hover
 {
 	text-decoration: none;
-	border: 1px solid #FF0D02;
+	border: 2px solid #FF0D02;
 	color: #FF0D02;
-	transition: border 2s, color 2s;
-	-webkit-transition: border 2s, color 2s;
+
 }
