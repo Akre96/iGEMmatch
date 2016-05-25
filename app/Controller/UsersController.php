@@ -119,7 +119,7 @@ class UsersController extends AppController {
          
         // if we get the post information, try to authenticate
         if ($this->request->is('post')) {
-            if ($this->Auth->login()) {
+            if ($this->Auth->login($this->request->data)) {
                 $this->Session->setFlash(__('Welcome, '. $this->Auth->user('username')));
                 $this->redirect($this->Auth->redirectUrl());
             } else {
