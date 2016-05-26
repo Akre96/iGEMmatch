@@ -71,7 +71,7 @@ class UsersController extends AppController {
  * @return void
  */
 	public function edit() {
-		$name = $this->Auth->User('username');
+		$name = $this->Auth->User['User']('username');
 		$user = $this->User->find(array('username'=>$name));
 		$id = $user['id'];
 
