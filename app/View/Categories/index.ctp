@@ -1,9 +1,14 @@
 <div class="categories index container-fluid">
 	<h2><?php echo __('Categories'); ?></h2>
-	<div class = "row row-centered">
+
 	<?php
+	$i = 0;
 	foreach($categories as $cat)
 	{
+	if(i%4 == 0)
+	{
+		echo "<div class = 'row row-centered'>"
+	}
 	echo "<div class='catHold col-xs-3 col-centered'>";
 		echo "<h3>".$cat['Category']['name']."</h3>";
 
@@ -14,12 +19,13 @@
 				echo "<h4> ".$this->Html->link($users['team'],'http://www.igemmatch.org/users/view/'.$users['id'])."</h4>";
 			}
 		}
-		echo "</div>";
+	echo "</div>";
+
 	}
-	echo "</div>"
+	if(i%4 == 0){echo "</div>";}
 
 
 	?>
-	</div>
+
 </div>
 
