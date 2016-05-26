@@ -20,6 +20,7 @@
 }
 .catHold
 {
+	height:20vh;
 	overflow: scroll;
 }
 h1,h2{
