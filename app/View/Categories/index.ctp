@@ -13,7 +13,7 @@
 		echo "<h3>".$cat['Category']['name']."</h3><br/>";
 
 		if(!empty($cat['User']))
-		
+		{
 			foreach($cat['User'] as $users)
 			{
 				echo "<h4> ".$this->Html->link($users['team'],'http://www.igemmatch.org/users/view/'.$users['id'])."</h4>";
