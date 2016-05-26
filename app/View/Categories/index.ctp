@@ -1,4 +1,4 @@
-<div class="categories index">
+<div class="categories index container-fluid">
 	<h2><?php echo __('Categories'); ?></h2>
 	<div class = "row row-centered">
 	<?php
@@ -11,7 +11,7 @@
 		{
 			foreach($cat['User'] as $users)
 			{
-				echo "<h4> ".$this->Html->link($users['team'],'http://www.igemmatch.org/users/view/'.$users['id'])."</h4><br/>";
+				echo "<h4> ".$this->Html->link($users['team'],'http://www.igemmatch.org/users/view/'.$users['id'])."</h4>";
 			}
 		}
 	}
