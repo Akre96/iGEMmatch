@@ -58,6 +58,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			    <!-- Collect the nav links, forms, and other content for toggling -->
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			      <ul class="nav navbar-nav">
+			        <li><?php echo $this->Html->link('Home','http://igemmatch.org/'); ?></li>			      	
 			        <li><?php echo $this->Html->link('Users','http://igemmatch.org/users/'); ?></li>
 			        <li><?php echo $this->Html->link('Categories','http://igemmatch.org/categories/');?></li>
 
