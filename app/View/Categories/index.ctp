@@ -20,8 +20,9 @@
 			}
 		}
 	echo "</div>";
-	if($i%4 == 0){echo "</div>";}
 	$i++;
+	if($i%4 == 0){echo "</div>";}
+
 	}
 
 
