@@ -18,7 +18,10 @@
 	border-radius: 5px;
 	color: #21B6A8;
 }
-
+.catHold
+{
+	overflow: scroll;
+}
 h1,h2{
 	font-family: 'Poiret One', cursive;
 
