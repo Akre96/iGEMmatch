@@ -87,7 +87,11 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 
 			<?php echo $this->fetch('content'); ?>
 		</div>
-		<div id="footer">
+		<div class ="row row-centered" id="footer">
+			<div class="col col-centered">
+				<p>&copy; UC Davis iGem 2016</p>
+				<p>Direct all questions and concerns to <a href="mailto:ucdigem@gmail.com" targe="_blank">ucdigem@gmail.com</a></p>
+			</div>
 
 		</div>
 	</div>
