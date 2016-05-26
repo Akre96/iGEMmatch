@@ -4,7 +4,7 @@
 	<?php
 	foreach($categories as $cat)
 	{
-	echo "<div class='catHold col-xs-3 col-centered'></div>";
+	echo "<div class='catHold col-xs-3 col-centered'>";
 		echo "<h3>".$cat['Category']['name']."</h3>";
 
 		if(!empty($cat['User']))
@@ -14,6 +14,7 @@
 				echo "<h4> ".$this->Html->link($users['team'],'http://www.igemmatch.org/users/view/'.$users['id'])."</h4>";
 			}
 		}
+		echo "</div>";
 	}
 	echo "</div>"
 
