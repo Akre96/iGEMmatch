@@ -1,9 +1,11 @@
 <div class="categories index">
 	<h2><?php echo __('Categories'); ?></h2>
+	<div class = "row row-centered">
 	<?php
 	foreach($categories as $cat)
 	{
-		echo "<br/><h3>".$cat['Category']['name']."</h3><br/>";
+	echo "<div class='catHold col-xs-3 col-centered'></div>";
+		echo "<h3>".$cat['Category']['name']."</h3>";
 
 		if(!empty($cat['User']))
 		{
@@ -13,8 +15,10 @@
 			}
 		}
 	}
+	echo "</div>"
 
 
 	?>
+	</div>
 </div>
 
