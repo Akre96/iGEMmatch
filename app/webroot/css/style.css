@@ -22,8 +22,7 @@
 {
 	height: 30vh;
 	overflow: scroll;
-	border-top: 2px;
-	border-bottom: 2px;
+	border: 1px 0px;
 	border-color: #FE1C03;
 	border-radius: 20px;
 
