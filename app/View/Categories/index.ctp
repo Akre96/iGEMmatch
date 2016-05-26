@@ -5,7 +5,7 @@
 	$i = 0;
 	foreach($categories as $cat)
 	{
-	if(i%4 == 0)
+	if($i%4 == 0)
 	{
 		echo "<div class = 'row row-centered'>";
 	}
@@ -20,9 +20,10 @@
 			}
 		}
 	echo "</div>";
-
-	}
 	if(i%4 == 0){echo "</div>";}
+	$i++;
+	}
+
 
 
 	?>
