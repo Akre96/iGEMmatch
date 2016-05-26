@@ -7,7 +7,7 @@
 	{
 	if(i%4 == 0)
 	{
-		echo "<div class = 'row row-centered'>"
+		echo "<div class = 'row row-centered'>";
 	}
 	echo "<div class='catHold col-xs-3 col-centered'>";
 		echo "<h3>".$cat['Category']['name']."</h3>";
