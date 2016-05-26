@@ -71,10 +71,7 @@ class UsersController extends AppController {
  * @return void
  */
 	public function edit() {
-		$name = $this->Auth->User('username');
-		echo $name;
-		$user = $this->User->find(array('username'=>$name));
-		$id = $user['id'];
+		$id = $this->Auth->User('id');
 
 
 		if (!$this->User->exists($id)) {
