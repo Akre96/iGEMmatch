@@ -1,7 +1,7 @@
 <div class = 'row'>
 	<div class = "col-xs-12" id= "welcome">
 		<h2>Welcome to iGem Match:</h2>
-		<p>This site is intended to allow iGem teams to see what type of project a certain team is conducting and gain their contact information. Find other teams any any of the following categories, or create your own and another team may contact you.</p>
+		<p>This site is intended to allow iGem teams to see what type of project a certain team is conducting and gain their contact information. Find other teams any of the following categories, or create your own and another team may contact you.</p>
 		<hr/>
 		<h2> How To Use this site</h2>
 		<ol>
