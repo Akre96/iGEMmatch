@@ -8,6 +8,10 @@ App::uses('AppController', 'Controller');
  */
 class UsersController extends AppController {
 
+public function beforeFilter() {
+        parent::beforeFilter();
+    	$this->Auth->allow('add', 'logout');
+    }
 /**
  * Components
  *
@@ -107,4 +111,34 @@ class UsersController extends AppController {
 		}
 		return $this->redirect(array('action' => 'index'));
 	}
+    public function login() {
+         
+        //if already logged-in, redirect
+        if($this->Session->check('Auth.User')){
+            $this->redirect(array('action' => 'index','controller'=>'categories'));      
+        }
+         
+        // if we get the post information, try to authenticate
+        if ($this->request->is('post')) {
+        	$this_user = $this->User->find('first', array(
+            'conditions' => array('username' => $this->request->data['User']['username'])
+        	));
+            $user_id = $this_user['User']['id'];
+        	$this->request->data['User'] = array_merge(
+                $this->request->data['User'],
+                array('id' => $user_id)
+        		);
+            if ($this->Auth->login($this->request->data)) {
+                $this->Session->setFlash(__('Welcome, '. $this->Auth->user('username')));
+                $this->redirect($this->Auth->redirectUrl());
+            } else {
+                $this->Session->setFlash(__('Invalid username or password'));
+            }
+        } 
+    }
+ 
+    public function logout() {
+        $this->redirect($this->Auth->logout());
+    }
+
 }
