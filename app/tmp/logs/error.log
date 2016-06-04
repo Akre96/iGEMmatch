@@ -3476,3 +3476,103 @@ Request URL: /robots.txt
 Stack Trace:
 #0 /home/jussie4/igemmatch.org/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2016-06-03 11:24:20 Error: [MissingTableException] Table keywords for model Keyword was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'keywords',
+  'class' => 'Keyword',
+  'ds' => 'default',
+)
+Request URL: /keywords
+Stack Trace:
+#0 /home/jussie4/igemmatch.org/lib/Cake/Model/Model.php(3653): Model->setSource('keywords')
+#1 /home/jussie4/igemmatch.org/lib/Cake/Model/Model.php(3031): Model->getDataSource()
+#2 /home/jussie4/igemmatch.org/lib/Cake/Model/Model.php(3003): Model->_readDataSource('all', Array)
+#3 /home/jussie4/igemmatch.org/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#4 /home/jussie4/igemmatch.org/app/Controller/KeywordsController.php(25): PaginatorComponent->paginate()
+#5 [internal function]: KeywordsController->index()
+#6 /home/jussie4/igemmatch.org/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(KeywordsController), Array)
+#7 /home/jussie4/igemmatch.org/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 /home/jussie4/igemmatch.org/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(KeywordsController), Object(CakeRequest))
+#9 /home/jussie4/igemmatch.org/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-06-03 13:47:43 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'igemusers.posts' doesn't exist
+Request URL: /users/login
+Stack Trace:
+#0 /home/jussie4/igemmatch.org/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /home/jussie4/igemmatch.org/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /home/jussie4/igemmatch.org/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /home/jussie4/igemmatch.org/lib/Cake/Model/Datasource/DboSource.php(1451): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /home/jussie4/igemmatch.org/lib/Cake/Model/Datasource/DboSource.php(1285): DboSource->_fetchHasMany(Object(User), 'SELECT `Post`.`...', Array)
+#5 /home/jussie4/igemmatch.org/lib/Cake/Model/Datasource/DboSource.php(1144): DboSource->queryAssociation(Object(User), Object(AppModel), 'hasMany', 'Post', Array, Array, true, Array, 0, Array)
+#6 /home/jussie4/igemmatch.org/lib/Cake/Model/Model.php(3031): DboSource->read(Object(User), Array)
+#7 /home/jussie4/igemmatch.org/lib/Cake/Model/Model.php(3003): Model->_readDataSource('first', Array)
+#8 /home/jussie4/igemmatch.org/app/Controller/UsersController.php(127): Model->find('first', Array)
+#9 [internal function]: UsersController->login()
+#10 /home/jussie4/igemmatch.org/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#11 /home/jussie4/igemmatch.org/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /home/jussie4/igemmatch.org/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#13 /home/jussie4/igemmatch.org/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-06-03 13:48:09 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'igemusers.posts' doesn't exist
+Request URL: /users/login
+Stack Trace:
+#0 /home/jussie4/igemmatch.org/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /home/jussie4/igemmatch.org/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /home/jussie4/igemmatch.org/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /home/jussie4/igemmatch.org/lib/Cake/Model/Datasource/DboSource.php(1451): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /home/jussie4/igemmatch.org/lib/Cake/Model/Datasource/DboSource.php(1285): DboSource->_fetchHasMany(Object(User), 'SELECT `Post`.`...', Array)
+#5 /home/jussie4/igemmatch.org/lib/Cake/Model/Datasource/DboSource.php(1144): DboSource->queryAssociation(Object(User), Object(AppModel), 'hasMany', 'Post', Array, Array, true, Array, 0, Array)
+#6 /home/jussie4/igemmatch.org/lib/Cake/Model/Model.php(3031): DboSource->read(Object(User), Array)
+#7 /home/jussie4/igemmatch.org/lib/Cake/Model/Model.php(3003): Model->_readDataSource('first', Array)
+#8 /home/jussie4/igemmatch.org/app/Controller/UsersController.php(127): Model->find('first', Array)
+#9 [internal function]: UsersController->login()
+#10 /home/jussie4/igemmatch.org/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#11 /home/jussie4/igemmatch.org/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /home/jussie4/igemmatch.org/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#13 /home/jussie4/igemmatch.org/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-06-03 15:09:17 Error: [MissingControllerException] Controller class Robots.txtController could not be found.
+Exception Attributes: array (
+  'class' => 'Robots.txtController',
+  'plugin' => NULL,
+)
+Request URL: /robots.txt
+Stack Trace:
+#0 /home/jussie4/igemmatch.org/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-03 15:32:31 Error: [MissingControllerException] Controller class Wp-login.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Wp-login.phpController',
+  'plugin' => NULL,
+)
+Request URL: /wp-login.php
+Stack Trace:
+#0 /home/jussie4/igemmatch.org/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-03 15:32:32 Error: [MissingControllerException] Controller class AdministratorController could not be found.
+Exception Attributes: array (
+  'class' => 'AdministratorController',
+  'plugin' => NULL,
+)
+Request URL: /administrator/
+Stack Trace:
+#0 /home/jussie4/igemmatch.org/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-03 22:40:06 Error: [MissingControllerException] Controller class Robots.txtController could not be found.
+Exception Attributes: array (
+  'class' => 'Robots.txtController',
+  'plugin' => NULL,
+)
+Request URL: /robots.txt
+Stack Trace:
+#0 /home/jussie4/igemmatch.org/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-04 03:37:29 Error: [MissingControllerException] Controller class Robots.txtController could not be found.
+Exception Attributes: array (
+  'class' => 'Robots.txtController',
+  'plugin' => NULL,
+)
+Request URL: /robots.txt
+Stack Trace:
+#0 /home/jussie4/igemmatch.org/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
