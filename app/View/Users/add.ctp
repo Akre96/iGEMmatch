@@ -10,7 +10,7 @@
 		echo $this->Form->input('phone');
 		echo $this->Form->input('category_id');
 		echo $this->Form->input('description');
-		echo $this->Form->select('Keyword');
+		echo $this->Form->input('Keyword');
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
