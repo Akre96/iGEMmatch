@@ -3,9 +3,7 @@
 	<fieldset>
 		<legend><?php echo __('Add Keyword'); ?></legend>
 	<?php
-		echo $this->Form->input('keyword_id');
 		echo $this->Form->input('name');
-		echo $this->Form->input('User');
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
