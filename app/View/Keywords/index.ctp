@@ -3,7 +3,7 @@
 	<table cellpadding="0" cellspacing="0">
 	<thead>
 	<tr>
-			<th><?php echo $this->Paginator->sort('keyword_id'); ?></th>
+			<th><?php echo $this->Paginator->sort('id'); ?></th>
 			<th><?php echo $this->Paginator->sort('name'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
@@ -11,9 +11,7 @@
 	<tbody>
 	<?php foreach ($keywords as $keyword): ?>
 	<tr>
-		<td>
-			<?php echo $this->Html->link($keyword['Keyword']['name'], array('controller' => 'keywords', 'action' => 'view', $keyword['Keyword']['id'])); ?>
-		</td>
+		<td><?php echo h($keyword['Keyword']['id']); ?>&nbsp;</td>
 		<td><?php echo h($keyword['Keyword']['name']); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $keyword['Keyword']['id'])); ?>

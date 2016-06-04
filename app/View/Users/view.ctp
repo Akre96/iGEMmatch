@@ -71,13 +71,13 @@
 	<?php if (!empty($user['Keyword'])): ?>
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
-		<th><?php echo __('Keyword Id'); ?></th>
+		<th><?php echo __('Id'); ?></th>
 		<th><?php echo __('Name'); ?></th>
 		<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php foreach ($user['Keyword'] as $keyword): ?>
 		<tr>
-			<td><?php echo $keyword['keyword_id']; ?></td>
+			<td><?php echo $keyword['id']; ?></td>
 			<td><?php echo $keyword['name']; ?></td>
 			<td class="actions">
 				<?php echo $this->Html->link(__('View'), array('controller' => 'keywords', 'action' => 'view', $keyword['id'])); ?>

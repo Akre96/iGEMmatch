@@ -1,9 +1,9 @@
 <div class="keywords view">
 <h2><?php echo __('Keyword'); ?></h2>
 	<dl>
-		<dt><?php echo __('Keyword'); ?></dt>
+		<dt><?php echo __('Id'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($keyword['Keyword']['name'], array('controller' => 'keywords', 'action' => 'view', $keyword['Keyword']['id'])); ?>
+			<?php echo h($keyword['Keyword']['id']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Name'); ?></dt>
@@ -31,13 +31,13 @@
 	<?php if (!empty($keyword['Keyword'])): ?>
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
-		<th><?php echo __('Keyword Id'); ?></th>
+		<th><?php echo __('Id'); ?></th>
 		<th><?php echo __('Name'); ?></th>
 		<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php foreach ($keyword['Keyword'] as $keyword): ?>
 		<tr>
-			<td><?php echo $keyword['keyword_id']; ?></td>
+			<td><?php echo $keyword['id']; ?></td>
 			<td><?php echo $keyword['name']; ?></td>
 			<td class="actions">
 				<?php echo $this->Html->link(__('View'), array('controller' => 'keywords', 'action' => 'view', $keyword['id'])); ?>
