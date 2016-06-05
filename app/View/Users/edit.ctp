@@ -36,6 +36,8 @@
  			'label' => 'Pick 3 keywords specific to your project',
  			'class' => 'form-control'
         	));
+
+		echo $this->Html->link('Add Keyword','http://igemmatch.org/keywords/add')		
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
