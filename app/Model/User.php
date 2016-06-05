@@ -8,7 +8,7 @@ App::uses('BlowfishPasswordHasher', 'Controller/Component/Auth');
  * @property Keyword $Keyword
  */
 class User extends AppModel {
-	
+
      public function beforeSave($options = array()) {
         // hash our password
         if (isset($this->data[$this->alias]['password'])) {
@@ -104,7 +104,7 @@ class User extends AppModel {
 			'conditions' => '',
 			'fields' => '',
 			'order' => '',
-			'limit' => '',
+			'limit' => '3',
 			'offset' => '',
 			'finderQuery' => '',
 		)
