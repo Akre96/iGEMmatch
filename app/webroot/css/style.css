@@ -59,7 +59,7 @@ h1 a:hover
 }
 .step{
 	vertical-align: middle;
-	border:1px solid #53D16F;
+	border:1px solid #FFB065;
 	border-radius: 20px;
 	min-height: 200px;
 	text-align: center;
@@ -80,7 +80,7 @@ h1 a:hover
 }
 .step p
 {
-	color: white;
+	color: #2990A3;
 }
 #footer
 {
