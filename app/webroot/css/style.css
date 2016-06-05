@@ -15,7 +15,7 @@
 	border-left:2px; 
 	border-right: 2px;
 	border-color: red;
-	border-radius: 20px;
+	border-radius: 5px;
 	color: #21B6A8;
 }
 .catHold
@@ -59,7 +59,7 @@ h1 a:hover
 }
 #step{
 	border:1px solid #53D16F;
-	border-radius: 5px;
+	border-radius: 20px;
 	min-height: 200px;
 	text-align: center;
 	color: #00761A;
