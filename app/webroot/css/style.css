@@ -1,0 +1,63 @@
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+.catCont
+{
+	border-left:2px; 
+	border-right: 2px;
+	border-color: red;
+	border-radius: 5px;
+	color: #21B6A8;
+}
+.catHold
+{
+	height: 30vh;
+	overflow: scroll;
+	border-top: 1px solid #21B6A8;
+	border-bottom: 1px solid #21B6A8;
+	border-radius: 20px;
+	margin:2px 0px;
+
+}
+.catHold h3
+{
+	color: #21B6A8;
+	font-weight: normal;
+}
+.catHold a
+{
+	color: gray;
+}
+h1,h2{
+	font-family: 'Poiret One', cursive;
+
+}
+
+h1{
+	color: #FE1C03;
+	padding: 5px;
+}
+h1 a{
+	color: #FE1C03;
+
+
+}
+
+h1 a:hover
+{
+	text-decoration: none;
+
+}
+#footer
+{
+	text-align: center;
+}

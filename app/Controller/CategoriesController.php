@@ -24,7 +24,13 @@ class CategoriesController extends AppController {
 		$this->Category->recursive = 0;
 		$this->set('categories', $this->Paginator->paginate());
 	}
-
+	
+	public function home()
+	{
+		$cats = $this->Category->find('all');
+		$this->set('categories',$cats);
+		//$this->layout="home";
+	}
 /**
  * view method
  *
