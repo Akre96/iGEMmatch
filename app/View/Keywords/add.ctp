@@ -5,7 +5,7 @@
 	<?php
 		echo $this->Form->input('name');
 		echo $this->Form->hidden('User',array(
-			'default'=> $this->Session->Auth->read('Auth.User.id')));
+			'default'=> $this->Session->read('Auth.User.id')));
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
