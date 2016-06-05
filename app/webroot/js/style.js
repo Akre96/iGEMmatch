@@ -3,7 +3,7 @@ $(document).ready(function(){
 
 
 $("#title").hover(function(){
-	alert('swag');
+	$(this).animate({border: 1px solid #FE1C03}, 500)
 	});
 
 
