@@ -75,12 +75,12 @@ h1 a:hover
 }
 .step h2 a:hover
 {
-	color: #53D16F;
+	color: white;
 	text-decoration: none;
 }
 .step p
 {
-	color: #777777;
+	color: white;
 }
 #footer
 {
