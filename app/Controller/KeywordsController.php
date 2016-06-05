@@ -55,9 +55,8 @@ class KeywordsController extends AppController {
 				$this->Flash->error(__('The keyword could not be saved. Please, try again.'));
 			}
 		}
-		$keywords = $this->Keyword->Keyword->find('list');
 		$users = $this->Keyword->User->find('list');
-		$this->set(compact('keywords', 'users'));
+		$this->set(compact('users'));
 	}
 
 /**
@@ -82,9 +81,8 @@ class KeywordsController extends AppController {
 			$options = array('conditions' => array('Keyword.' . $this->Keyword->primaryKey => $id));
 			$this->request->data = $this->Keyword->find('first', $options);
 		}
-		$keywords = $this->Keyword->Keyword->find('list');
 		$users = $this->Keyword->User->find('list');
-		$this->set(compact('keywords', 'users'));
+		$this->set(compact('users'));
 	}
 
 /**

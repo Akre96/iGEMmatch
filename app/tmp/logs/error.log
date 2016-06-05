@@ -107,3 +107,206 @@ Stack Trace:
 #11 /home/jussie4/igemmatch.org/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(KeywordsController), Object(CakeRequest))
 #12 /home/jussie4/igemmatch.org/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #13 {main}
+2016-06-04 14:05:26 Error: Fatal Error (1): Call to a member function find() on null in [/home/jussie4/igemmatch.org/app/Controller/KeywordsController.php, line 58]
+2016-06-04 14:05:26 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /keywords/add
+Stack Trace:
+#0 /home/jussie4/igemmatch.org/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/jussie4/i...', 58)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/jussie4/i...', 58, Array)
+#2 /home/jussie4/igemmatch.org/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/jussie4/i...', 58, Array)
+#3 /home/jussie4/igemmatch.org/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-04 14:07:13 Error: Fatal Error (1): Call to a member function find() on null in [/home/jussie4/igemmatch.org/app/Controller/KeywordsController.php, line 58]
+2016-06-04 14:07:13 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /keywords/add
+Stack Trace:
+#0 /home/jussie4/igemmatch.org/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/jussie4/i...', 58)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/jussie4/i...', 58, Array)
+#2 /home/jussie4/igemmatch.org/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/jussie4/i...', 58, Array)
+#3 /home/jussie4/igemmatch.org/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-04 14:18:02 Error: Fatal Error (1): Call to a member function find() on null in [/home/jussie4/igemmatch.org/app/Controller/KeywordsController.php, line 58]
+2016-06-04 14:18:02 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /keywords/add
+Stack Trace:
+#0 /home/jussie4/igemmatch.org/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/jussie4/i...', 58)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/jussie4/i...', 58, Array)
+#2 /home/jussie4/igemmatch.org/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/jussie4/i...', 58, Array)
+#3 /home/jussie4/igemmatch.org/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-04 14:18:17 Error: Fatal Error (1): Call to a member function find() on null in [/home/jussie4/igemmatch.org/app/Controller/KeywordsController.php, line 58]
+2016-06-04 14:18:17 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /keywords/add
+Stack Trace:
+#0 /home/jussie4/igemmatch.org/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/jussie4/i...', 58)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/jussie4/i...', 58, Array)
+#2 /home/jussie4/igemmatch.org/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/jussie4/i...', 58, Array)
+#3 /home/jussie4/igemmatch.org/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-04 14:18:19 Error: Fatal Error (1): Call to a member function find() on null in [/home/jussie4/igemmatch.org/app/Controller/KeywordsController.php, line 58]
+2016-06-04 14:18:19 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /keywords/add
+Stack Trace:
+#0 /home/jussie4/igemmatch.org/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/jussie4/i...', 58)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/jussie4/i...', 58, Array)
+#2 /home/jussie4/igemmatch.org/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/jussie4/i...', 58, Array)
+#3 /home/jussie4/igemmatch.org/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-04 14:18:19 Error: Fatal Error (1): Call to a member function find() on null in [/home/jussie4/igemmatch.org/app/Controller/KeywordsController.php, line 58]
+2016-06-04 14:18:19 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /keywords/add
+Stack Trace:
+#0 /home/jussie4/igemmatch.org/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/jussie4/i...', 58)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/jussie4/i...', 58, Array)
+#2 /home/jussie4/igemmatch.org/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/jussie4/i...', 58, Array)
+#3 /home/jussie4/igemmatch.org/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-04 14:20:58 Error: Fatal Error (1): Call to a member function find() on null in [/home/jussie4/igemmatch.org/app/Controller/KeywordsController.php, line 58]
+2016-06-04 14:20:58 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /keywords/add
+Stack Trace:
+#0 /home/jussie4/igemmatch.org/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/jussie4/i...', 58)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/jussie4/i...', 58, Array)
+#2 /home/jussie4/igemmatch.org/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/jussie4/i...', 58, Array)
+#3 /home/jussie4/igemmatch.org/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-04 14:21:35 Error: [MissingControllerException] Controller class KeywordsusersController could not be found.
+Exception Attributes: array (
+  'class' => 'KeywordsusersController',
+  'plugin' => NULL,
+)
+Request URL: /keywordsusers
+Stack Trace:
+#0 /home/jussie4/igemmatch.org/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-04 14:23:53 Error: Fatal Error (1): Call to a member function find() on null in [/home/jussie4/igemmatch.org/app/Controller/KeywordsController.php, line 58]
+2016-06-04 14:23:53 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /keywords/add
+Stack Trace:
+#0 /home/jussie4/igemmatch.org/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/jussie4/i...', 58)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/jussie4/i...', 58, Array)
+#2 /home/jussie4/igemmatch.org/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/jussie4/i...', 58, Array)
+#3 /home/jussie4/igemmatch.org/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-04 14:23:57 Error: Fatal Error (1): Call to a member function find() on null in [/home/jussie4/igemmatch.org/app/Controller/KeywordsController.php, line 58]
+2016-06-04 14:23:57 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /keywords/add
+Stack Trace:
+#0 /home/jussie4/igemmatch.org/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/jussie4/i...', 58)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/jussie4/i...', 58, Array)
+#2 /home/jussie4/igemmatch.org/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/jussie4/i...', 58, Array)
+#3 /home/jussie4/igemmatch.org/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-04 14:41:32 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Request URL: /categories
+Stack Trace:
+#0 /home/jussie4/igemmatch.org/lib/Cake/Core/App.php(227): CakePlugin::path('DebugKit')
+#1 /home/jussie4/igemmatch.org/lib/Cake/Core/App.php(549): App::path('Controller/Comp...', 'DebugKit')
+#2 [internal function]: App::load('ToolbarComponen...')
+#3 [internal function]: spl_autoload_call('ToolbarComponen...')
+#4 /home/jussie4/igemmatch.org/lib/Cake/Controller/ComponentCollection.php(110): class_exists('ToolbarComponen...')
+#5 /home/jussie4/igemmatch.org/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('DebugKit.Toolba...', Array)
+#6 /home/jussie4/igemmatch.org/lib/Cake/Controller/Controller.php(644): ComponentCollection->init(Object(CategoriesController))
+#7 /home/jussie4/igemmatch.org/lib/Cake/Routing/Dispatcher.php(188): Controller->constructClasses()
+#8 /home/jussie4/igemmatch.org/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#9 /home/jussie4/igemmatch.org/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-06-04 16:26:41 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [/home/jussie4/igemmatch.org/app/View/Layouts/default.ctp, line 41]
+2016-06-04 16:26:41 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /categories
+Stack Trace:
+#0 /home/jussie4/igemmatch.org/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/jussie4/i...', 41)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/jussie4/i...', 41, Array)
+#2 /home/jussie4/igemmatch.org/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/jussie4/i...', 41, Array)
+#3 /home/jussie4/igemmatch.org/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-04 16:26:42 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [/home/jussie4/igemmatch.org/app/View/Layouts/default.ctp, line 41]
+2016-06-04 16:26:42 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /categories
+Stack Trace:
+#0 /home/jussie4/igemmatch.org/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/jussie4/i...', 41)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/jussie4/i...', 41, Array)
+#2 /home/jussie4/igemmatch.org/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/jussie4/i...', 41, Array)
+#3 /home/jussie4/igemmatch.org/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-04 16:27:07 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /categories
+Stack Trace:
+#0 /home/jussie4/igemmatch.org/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Auth')
+#1 /home/jussie4/igemmatch.org/lib/Cake/View/View.php(858): HelperCollection->__isset('Auth')
+#2 /home/jussie4/igemmatch.org/app/View/Layouts/default.ctp(41): View->__get('Auth')
+#3 /home/jussie4/igemmatch.org/lib/Cake/View/View.php(971): include('/home/jussie4/i...')
+#4 /home/jussie4/igemmatch.org/lib/Cake/View/View.php(933): View->_evaluate('/home/jussie4/i...', Array)
+#5 /home/jussie4/igemmatch.org/lib/Cake/View/View.php(546): View->_render('/home/jussie4/i...')
+#6 /home/jussie4/igemmatch.org/lib/Cake/View/View.php(481): View->renderLayout('', 'default')
+#7 /home/jussie4/igemmatch.org/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#8 /home/jussie4/igemmatch.org/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#9 /home/jussie4/igemmatch.org/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#10 /home/jussie4/igemmatch.org/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2016-06-04 16:27:10 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /categories
+Stack Trace:
+#0 /home/jussie4/igemmatch.org/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Auth')
+#1 /home/jussie4/igemmatch.org/lib/Cake/View/View.php(858): HelperCollection->__isset('Auth')
+#2 /home/jussie4/igemmatch.org/app/View/Layouts/default.ctp(41): View->__get('Auth')
+#3 /home/jussie4/igemmatch.org/lib/Cake/View/View.php(971): include('/home/jussie4/i...')
+#4 /home/jussie4/igemmatch.org/lib/Cake/View/View.php(933): View->_evaluate('/home/jussie4/i...', Array)
+#5 /home/jussie4/igemmatch.org/lib/Cake/View/View.php(546): View->_render('/home/jussie4/i...')
+#6 /home/jussie4/igemmatch.org/lib/Cake/View/View.php(481): View->renderLayout('', 'default')
+#7 /home/jussie4/igemmatch.org/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#8 /home/jussie4/igemmatch.org/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#9 /home/jussie4/igemmatch.org/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#10 /home/jussie4/igemmatch.org/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2016-06-04 16:28:55 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /login
+Stack Trace:
+#0 /home/jussie4/igemmatch.org/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-04 16:44:23 Error: [MissingActionException] Action UsersController::edit5() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'edit5',
+)
+Request URL: /Users/edit5
+Stack Trace:
+#0 /home/jussie4/igemmatch.org/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/jussie4/igemmatch.org/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/jussie4/igemmatch.org/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-06-04 17:21:37 Error: [NotFoundException] Invalid user
+Request URL: /users/edit/
+Stack Trace:
+#0 [internal function]: UsersController->edit()
+#1 /home/jussie4/igemmatch.org/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/jussie4/igemmatch.org/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/jussie4/igemmatch.org/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/jussie4/igemmatch.org/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
