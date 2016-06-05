@@ -7,7 +7,7 @@ $(".step").hover(function(){
 		backgroundColor: '#4BA5B6',
 		borderColor: '#4BA5B6',
 
-	}, 200)
+	}, 100)
 	},
 	function()
 	{
@@ -15,7 +15,8 @@ $(".step").hover(function(){
 		backgroundColor: '#53D16F',
 		borderColor: '#53D16F',
 
-	}, 200)
+	}, 100)
+
 	});
 
 
