@@ -69,7 +69,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 							{			
 								echo '<li>';echo $this->Html->link($this->Session->read('Auth.User.team'), 'http://igemmatch.org/users/view/'.$this->Session->read('Auth.User.id'));echo '</li>';	
 								echo '<li>';echo $this->Html->link('logout', 'http://igemmatch.org/users/logout');echo '</li>';
-								echo '<li>'.$this->Html->link('change category', 'http://igemmatch.org/users/edit/').'</li>';
+								echo '<li>'.$this->Html->link('Edit Profile', 'http://igemmatch.org/users/edit/').'</li>';
 							}
 							else
 							{
