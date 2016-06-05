@@ -33,6 +33,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		echo $this->Html->css('style.css');
 		echo $this->Html->script('jquery-2.2.4.min.js');
 		echo $this->Html->script('bootstrap.min.js');
+		echo '<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>"';
 		echo $this->Html->script('style');		
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
