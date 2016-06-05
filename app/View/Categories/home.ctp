@@ -1,5 +1,5 @@
-<div class="row row-centered" style = "display:table">
-	<div class="col-xs-3"></div>
+<div class="row row-centered">
+
 	<div class="col-xs-2 col-centered" id="step">
 		<h2>Sign Up</h2>
 	</div>
