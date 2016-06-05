@@ -4,8 +4,7 @@
 		<legend><?php echo __('Add Keyword'); ?></legend>
 	<?php
 		echo $this->Form->input('name');
-		echo $this->Form->hidden('User',array(
-			'default'=> $this->Session->read('Auth.User.id')));
+		echo $this->Form->hidden('User.id');
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
