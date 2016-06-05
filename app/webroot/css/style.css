@@ -66,6 +66,7 @@ h1 a:hover
 	color: #00761A;
 	font-weight: bold;
 	overflow:scroll;
+	float:none;
 }
 #footer
 {
