@@ -57,7 +57,7 @@ h1 a:hover
 	text-decoration: none;
 
 }
-#step{
+.step{
 	vertical-align: middle;
 	border:1px solid #53D16F;
 	border-radius: 20px;
@@ -67,7 +67,7 @@ h1 a:hover
 	overflow:scroll;
 	float:none;
 }
-#step p
+.step p
 {
 	color: #777777;
 }
