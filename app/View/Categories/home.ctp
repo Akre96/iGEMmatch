@@ -1,3 +1,15 @@
+<div class="row">
+	<div class="col-xs-3" id="step">
+		<h2>Sign Up</h2>
+	</div>
+	<div class="col-xs-3" id="step">
+		<h2>Login</h2>
+	</div>
+	<div class="col-xs-3" id="step">
+		<h2>Find teams in your field</h2>
+	</div>
+</div>
+
 <div class = 'row'>
 	<div class = "col-xs-12" id= "welcome" style = "border: 1px solid #53D16F">
 		<h2>Welcome to iGem Match:</h2>
