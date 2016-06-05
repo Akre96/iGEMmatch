@@ -1,4 +1,2 @@
 
-$("#title").click(function(){
-	alert('swag');
-});
+$("h1").hide();
