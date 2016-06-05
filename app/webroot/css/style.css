@@ -65,12 +65,12 @@ h1 a:hover
 	text-align: center;
 	overflow:scroll;
 	float:none;
-	background-color: #2DC44E;
+	background-color: #FFB065;
 	opacity: 0.5;
 }
 .step h2 a
 {
-	color: #1a0d00;
+	color: #025160;
 
 }
 .step h2 a:hover
