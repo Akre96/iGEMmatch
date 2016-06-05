@@ -5,15 +5,17 @@ $(document).ready(function(){
 $(".step").hover(function(){
 	$(this).animate({
 		backgroundColor: '#4BA5B6',
+		borderColor: '#4BA5B6',
 
-	}, 500)
+	}, 200)
 	},
 	function()
 	{
 	$(this).animate({
 		backgroundColor: '#53D16F',
+		borderColor: '#53D16F',
 
-	}, 500)
+	}, 200)
 	});
 
 
