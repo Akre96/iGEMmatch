@@ -71,7 +71,8 @@ public function beforeFilter() {
  * @param string $id
  * @return void
  */
-	public function edit($id = null) {
+	public function edit() {
+		$id = $this->Auth->User('User.id');
 		if (!$this->User->exists($id)) {
 			throw new NotFoundException(__('Invalid user'));
 		}
