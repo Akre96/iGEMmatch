@@ -26,26 +26,18 @@ public function beforeSave($options = array()) {
  * @var array
  */
 	public $validate = array(
-		'username' => array(
-			'notBlank' => array(
-				'rule' => array('notBlank'),
-				'message' => 'Entry Required',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'password' => array(
-			'notBlank' => array(
-				'rule' => array('notBlank'),
-				'message' => 'Entry Required',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
+        'username' => array(
+            'required' => array(
+                'rule' => 'notBlank',
+                'message' => 'A username is required'
+            )
+        ),
+        'password' => array(
+            'required' => array(
+                'rule' => 'notBlank',
+                'message' => 'A password is required'
+            )
+        ),
 		'email' => array(
 			'email' => array(
 				'rule' => array('email'),
