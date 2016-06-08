@@ -1,5 +1,5 @@
 <div class="categories index container-fluid">
-	<h2><?php echo __('Categories'); ?></h2>
+	<h2>Teams in each iGem Track</h2>
 
 	<?php
 	$i = 0;

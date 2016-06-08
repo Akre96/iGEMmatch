@@ -62,7 +62,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			      <ul class="nav navbar-nav">
 			        <li><?php echo $this->Html->link('Home','http://igemmatch.org/'); ?></li>			      	
 			        <li><?php echo $this->Html->link('Users','http://igemmatch.org/users/'); ?></li>
-			        <li><?php echo $this->Html->link('Categories','http://igemmatch.org/categories/');?></li>
+			        <li><?php echo $this->Html->link('iGem Tracks','http://igemmatch.org/categories/');?></li>
 
 			      </ul>
 			      <ul class="nav navbar-nav navbar-right">
