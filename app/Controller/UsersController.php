@@ -121,15 +121,15 @@ public function beforeFilter() {
          
         // if we get the post information, try to authenticate
         if ($this->request->is('post')) {
-        	$this_user = $this->User->find('first', array(
+        	/* $this_user = $this->User->find('first', array(
             'conditions' => array('username' => $this->request->data['User']['username'])
         	));
             $user_id = $this_user['User']['id'];
         	$this->request->data['User'] = array_merge(
                 $this->request->data['User'],
                 array('id' => $user_id)
-        		);
-            if ($this->Auth->login($this->request->data)) {
+        		); */
+            if ($this->Auth->login()) {
                 $this->Session->setFlash(__('Welcome, '. $this->Auth->user('username')));
                 $this->redirect($this->Auth->redirectUrl());
             } else {
