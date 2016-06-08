@@ -44,10 +44,12 @@ class AppController extends Controller {
                 'controller' => 'categories',
                 'action' => 'index',
             ),
-            'Form' => array(
-                'passwordHasher' => 'Blowfish'
-            ),
-            'authorize'=>array('controller'),
+            'authenticate' => array(
+                'Form' => array(
+                    'passwordHasher' => 'Blowfish'
+                )
+            )
+
             )
 
     );
@@ -56,7 +58,7 @@ class AppController extends Controller {
     {
         return true;
     }
-    
+
     public function beforeFilter() {
         $this->Auth->allow('index','login','home');
     }   
