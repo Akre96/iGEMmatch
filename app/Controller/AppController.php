@@ -43,6 +43,9 @@ class AppController extends Controller {
             'logoutRedirect' => array(
                 'controller' => 'categories',
                 'action' => 'index',
+            ),
+            'Form' => array(
+                'passwordHasher' => 'Blowfish'
             ),)
 
     );
