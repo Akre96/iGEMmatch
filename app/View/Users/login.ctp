@@ -1,11 +1,6 @@
 <div class="users form">
 <?php echo $this->Flash->render('auth'); ?>
-<?php echo $this->Form->create('User'); 
-echo $this->Form->input('username');
-echo $this->Form->input('password');
-echo $this->Form->end('Login');
-?>
-<!--
+<?php echo $this->Form->create('User'); ?>
     <fieldset>
         <legend>
             <?php echo __('Please enter your username and password'); ?>
@@ -22,7 +17,5 @@ echo $this->Form->end('Login');
         	));
     ?>
     </fieldset>
-
 <?php echo $this->Form->end(array('label'=>'Login','class'=>'btn btn-default')); ?>
--->
 </div>
