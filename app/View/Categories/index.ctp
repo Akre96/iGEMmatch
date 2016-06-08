@@ -9,7 +9,7 @@
 	{
 		echo "<div class = 'row row-centered'>";
 	}
-	echo "<div class='catHold col-xs-4 col-centered'>";
+	echo "<div class='catHold col-sm-4 col-xs-6 col-centered'>";
 		echo "<h3>".$cat['Category']['name']."</h3>";
 
 		if(!empty($cat['User']))
