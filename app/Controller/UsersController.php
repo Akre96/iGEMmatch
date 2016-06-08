@@ -129,7 +129,7 @@ public function beforeFilter() {
                 $this->request->data['User'],
                 array('id' => $user_id)
         		);
-            if ($this->Auth->login($this->request->data)) {
+            if ($this->Auth->login()) {
                 $this->Session->setFlash(__('Welcome, '. $this->Auth->user('username')));
                 $this->redirect($this->Auth->redirectUrl());
             } else {
