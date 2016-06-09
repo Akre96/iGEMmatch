@@ -19,7 +19,7 @@
 		</td>
 		<td><?php foreach($user['Keyword'] as $keyword)
 		{
-			echo $this->Html->link($keyword['name'], array('controller' => 'keywords', 'action' => 'view', $keyword['id'])); 
+			echo $this->Html->link($keyword['name'], array('controller' => 'keywords', 'action' => 'view', $keyword['id'])).'  '; 
 		}
 
 
