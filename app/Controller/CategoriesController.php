@@ -23,6 +23,7 @@ class CategoriesController extends AppController {
 	public function index() {
 	//	$this->Category->recursive = 0;
 		$this->set('categories', $this->Category->find('all'));
+		$this->set('allUsers', $this->User->find('all'));
 	}
 	
 	public function home()
