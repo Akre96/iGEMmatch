@@ -28,7 +28,7 @@ class CategoriesController extends AppController {
 			if($cat['User'])
 
 				foreach ($cat['User'] as $user) {
-					$user['keywords'] = getKeyWordsByUserId($user['id']);
+					$user['keywords'] = $this->Keyword->getKeyWordsByUserId($user['id']);
 				}
 		}
 		$this->set('categories', $categories);
