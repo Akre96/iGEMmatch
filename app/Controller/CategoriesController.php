@@ -27,7 +27,7 @@ class CategoriesController extends AppController {
 		{
 			if($cat['User'])
 
-				foreach ($cat['user'] as $user) {
+				foreach ($cat['User'] as $user) {
 					$user['keywords'] = getKeyWordsByUserId($user['id']);
 				}
 		}
