@@ -87,3 +87,14 @@ h1 a:hover
 {
 	text-align: center;
 }
+
+.about
+{
+	border-left: 1px solid #FF7465;
+	border-right: 1px solid #FF7465;
+	border-radius: 20px;
+}
+.about h2
+{
+	color: #FF7465;
+}
