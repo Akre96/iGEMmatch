@@ -11,25 +11,17 @@ echo $this->Form->end('Intent to Contact?');
 
 ?>
 <h2><?php echo 'Team: '.($user['User']['team']); ?></h2>
-	<dl>
-		<dt><?php echo __('Team'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['team']); ?>
-			&nbsp;
-		</dd>
-
-		<dt><?php echo __('Email'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['email']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Phone'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['phone']); ?>
-			&nbsp;
-		</dd>
-
-		<dt><?php echo __('Category'); ?></dt>
+<div class="about row row-centered">
+	<div class="col-xs-8 col-cenetered">
+		<h3>About:</h3>
+		<h4><?php echo $this->Html->link($user['Category']['name'], array('controller' => 'categories', 'action' => 'view', $user['Category']['id'])); ?> </h4> </br>
+		<h4>Keywords: <?php foreach($user['Keyword'] as $keyword)
+		{
+			echo $this->Html->link($keyword['name'], array('controller' => 'keywords', 'action' => 'view', $keyword['id'])).'  '; 
+		}
+		?>&nbsp; </h4>
+	</div>
+</div>
 		<dd>
 			<?php echo $this->Html->link($user['Category']['name'], array('controller' => 'categories', 'action' => 'view', $user['Category']['id'])); ?>
 			&nbsp;
