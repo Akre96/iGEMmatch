@@ -98,4 +98,8 @@ h1 a:hover
 .about h3
 {
 	color: #FF7465;
+	font-family: 'Poiret One', cursive;
+}
+a{
+	color:#4BA5B6;
 }
