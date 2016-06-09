@@ -50,24 +50,23 @@ public function beforeFilter() {
 			}
 		}
 		}
-
-
-
-		
+		$this->set('contacted',$contacted);
 		if ($contacted == 0)
 		{
 			$newContact = $contact.','.strval($id);
 			$this->set('new',$newContact);
+			if ($this->request->is('post'))
+			{
+				$userId = $this->Auth->User('id');
+				$data = array('id' => $userId, 'contact' => $newContact);
+				$this->set('data',$data);
+				$this->User->save($data);
+					return $this->redirect(array('action' => 'view',$id));
+			}
 		}
-		if ($this->request->is('post'))
-		{
-			$userId = $this->Auth->User('id');
-			$data = array('id' => $userId, 'contact' => $newContact);
-			$this->set('data',$data);
-			$this->User->save($data);
-			return $this->redirect(array('action' => 'view',$id));
-		}
-		$this->set('contacted',$contacted);
+
+
+
 
 		if (!$this->User->exists($id)) {
 			throw new NotFoundException(__('Invalid user'));
