@@ -26,7 +26,7 @@ public function beforeFilter() {
  * @return void
  */
 	public function index() {
-		$this->User->recursive = 0;
+	//	$this->User->recursive = 0;
 		$this->set('users', $this->Paginator->paginate());
 	}
 
@@ -53,8 +53,18 @@ public function beforeFilter() {
 
 		if ($contacted == 0)
 		{
-			$newContact = $contact.','.strval($id);
-			$this->set('new',$newContact);
+			if($contact)
+			{
+				$newContact = $contact.','.strval($id);
+			
+			}
+			else
+			{
+				$newContact = strval($id);
+			}
+
+
+			$this->set('new',$newContact);	
 			if ($this->request->is(array('post','put')))
 			{
 				$userId = $this->Auth->User('id');
