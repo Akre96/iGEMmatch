@@ -21,9 +21,6 @@
 		{
 			echo $this->Html->link($keyword['name'], array('controller' => 'keywords', 'action' => 'view', $keyword['id'])).'  '; 
 		}
-
-
-
 		?>&nbsp;</td>
 	</tr>
 <?php endforeach; ?>
