@@ -43,7 +43,7 @@ public function beforeFilter() {
 		if($contact)
 		{
 			$contacts= explode(',',$contact);
-			foreach ($team as $contacts) {
+			foreach ($contacts as $team) {
 			if ($team == strval($id))
 			{
 				$contacted = 1;
