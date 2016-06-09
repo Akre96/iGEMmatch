@@ -6,7 +6,7 @@ if (!$contacted)
 echo $this->Form->create('User'); 
 echo $this->Form->end('Intent to Contact?');
 echo $new;
-echo $data;
+pr($data);
 
 }
 
