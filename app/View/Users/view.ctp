@@ -5,8 +5,12 @@
 	{
 
 	echo $this->Form->create('User'); 
-	echo $this->Form->end('Intent to Contact?');
+	echo $this->Form->end(array('label'=>'Click here if you intend to contact this team.','class'=>'btn btn-success'));
 
+	}
+	else
+	{
+		echo "<p class = 'bg-info'>You have indicated intent to contact this team</p>";
 	}
 
 	?>
