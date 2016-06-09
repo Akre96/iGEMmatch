@@ -47,7 +47,7 @@ public function beforeFilter() {
 
 		$contacted = 0;
 		foreach ($team as $contacts) {
-			if $team == strval($id)
+			if ($team == strval($id))
 			{
 				$contacted = 1;
 			}
