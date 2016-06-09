@@ -38,6 +38,34 @@ public function beforeFilter() {
  * @return void
  */
 	public function view($id = null) {
+		$contact = $this->Auth->User('contact');
+
+		if($contact)
+		{
+			$contacts= explode(',',$contact);
+		}
+
+		$contacted = 0;
+		foreach ($team as $contacts) {
+			if $team == strval($id)
+			{
+				$contacted = 1;
+			}
+		}
+		
+		$this->set('contacted',$contacted);
+		if ($contacted == 0)
+		{
+			$newContact = $contact.strval($id);
+		}
+		if ($this->request->is('post'))
+		{
+			$userId = $this->Auth->User('id');
+			$data = array('id' => $userId, 'contact' = $newContact);
+			$this->User->save($data);
+		}
+
+
 		if (!$this->User->exists($id)) {
 			throw new NotFoundException(__('Invalid user'));
 		}
