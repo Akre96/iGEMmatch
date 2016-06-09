@@ -50,7 +50,7 @@ public function beforeFilter() {
 			}
 		}
 		}
-		$this->set('contacted',$contacted);
+
 		if ($contacted == 0)
 		{
 			$newContact = $contact.','.strval($id);
@@ -61,10 +61,11 @@ public function beforeFilter() {
 				$data = array('id' => $userId, 'contact' => $newContact);
 				$this->set('data',$data);
 				$this->User->save($data);
-					return $this->redirect(array('action' => 'view',$id));
+
+				$contacted = 1;
 			}
 		}
-
+		$this->set('contacted',$contacted);
 		if (!$this->User->exists($id)) {
 			throw new NotFoundException(__('Invalid user'));
 		}
