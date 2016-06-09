@@ -1,5 +1,5 @@
 <div class="keywords view">
-<h2><?php echo $keyword['name']; ?></h2>
+<h2><?php echo $keyword['Keyword']['name']; ?></h2>
 
 <div class="related">
 	<h3><?php echo __('Related Users'); ?></h3>
