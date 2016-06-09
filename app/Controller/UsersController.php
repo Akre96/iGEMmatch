@@ -55,7 +55,7 @@ public function beforeFilter() {
 		{
 			$newContact = $contact.','.strval($id);
 			$this->set('new',$newContact);
-			if ($this->request->is('post'))
+			if ($this->request->is(array('post','put')))
 			{
 				$userId = $this->Auth->User('id');
 				$data = array('id' => $userId, 'contact' => $newContact);
@@ -64,9 +64,6 @@ public function beforeFilter() {
 					return $this->redirect(array('action' => 'view',$id));
 			}
 		}
-
-
-
 
 		if (!$this->User->exists($id)) {
 			throw new NotFoundException(__('Invalid user'));
