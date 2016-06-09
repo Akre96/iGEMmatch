@@ -5,7 +5,7 @@
 	<tr>
 			<th><?php echo $this->Paginator->sort('team'); ?></th>
 			<th><?php echo $this->Paginator->sort('category_id'); ?></th>
-			<th><?php echo $this->Paginator->sort('description'); ?></th>
+			<th><?php echo $this->Paginator->sort('keyword'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	</thead>
@@ -18,7 +18,14 @@
 		<td>
 			<?php echo $this->Html->link($user['Category']['name'], array('controller' => 'categories', 'action' => 'view', $user['Category']['id'])); ?>
 		</td>
-		<td><?php echo h($user['User']['description']); ?>&nbsp;</td>
+		<td><?php foreach($user['Keyword'] as $keyword)
+		{
+			echo $this->Html->link($keyword['name'], array('controller' => 'keywords', 'action' => 'view', $keyword['id'])); ?>
+		}
+
+
+
+		?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $user['User']['id'])); ?>
 	</tr>
