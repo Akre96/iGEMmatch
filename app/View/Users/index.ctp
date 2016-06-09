@@ -18,9 +18,9 @@
 		<td>
 			<?php echo $this->Html->link($user['Category']['name'], array('controller' => 'categories', 'action' => 'view', $user['Category']['id'])); ?>
 		</td>
-		<td><?php foreach($user['Keyword'] as $keyword)
+		<td><? php foreach($user['Keyword'] as $keyword)
 		{
-			echo $this->Html->link($keyword['name'], array('controller' => 'keywords', 'action' => 'view', $keyword['id'])); ?>
+			echo $this->Html->link($keyword['name'], array('controller' => 'kywords', 'action' => 'view', $keyword['id'])); 
 		}
 
 
