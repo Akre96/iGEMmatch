@@ -3,13 +3,34 @@
 	<fieldset>
 		<legend><?php echo __('Add User'); ?></legend>
 	<?php
-		echo $this->Form->input('username');
-		echo $this->Form->input('team');
-		echo $this->Form->input('password');
-		echo $this->Form->input('email');
-		echo $this->Form->input('phone');
+		echo $this->Form->input('username',array(
+        	'div' => array('class' => 'form-group'),
+ 			'label' => 'Username',
+ 			'class' => 'form-control'
+        	));
+
+		echo $this->Form->input('team',array(
+        	'div' => array('class' => 'form-group'),
+ 			'label' => 'Team',
+ 			'class' => 'form-control'
+        	));
+		echo $this->Form->input('password',array(
+        	'div' => array('class' => 'form-group'),
+ 			'label' => 'Password',
+ 			'class' => 'form-control'
+        	));
+		echo $this->Form->input('email',array(
+        	'div' => array('class' => 'form-group'),
+ 			'label' => 'Email',
+ 			'class' => 'form-control'
+        	));
+		echo $this->Form->input('phone',array(
+        	'div' => array('class' => 'form-group'),
+ 			'label' => 'Phone Number',
+ 			'class' => 'form-control'
+        	));
 
 	?>
 	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
+<?php echo $this->Form->end(array('label'=>'Sign Up','class'=>'btn btn-success')); ?>
 
