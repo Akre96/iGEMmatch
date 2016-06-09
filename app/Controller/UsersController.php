@@ -61,7 +61,7 @@ public function beforeFilter() {
 		if ($this->request->is('post'))
 		{
 			$userId = $this->Auth->User('id');
-			$data = array('id' => $userId, 'contact' = $newContact);
+			$data = array('id' => $userId, 'contact' => $newContact);
 			$this->User->save($data);
 		}
 
