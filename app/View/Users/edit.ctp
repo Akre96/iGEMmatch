@@ -40,7 +40,8 @@
 		echo $this->Html->link('Add Keyword','http://igemmatch.org/keywords/add',array('class' => 'btn btn-info'));		
 	?>
 	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
+</br>
+<?php echo $this->Form->end(array('label'=>'Update Profile','class'=>'btn btn-primary')); ?>
 </div>
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>
