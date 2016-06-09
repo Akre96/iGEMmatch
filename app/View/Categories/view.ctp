@@ -5,7 +5,7 @@
 	<?php if (!empty($category['User'])): ?>
 	<table class = "table table-striped">
 	<tr>
-		<th><?php echo __('Team'); ?></th>
+		<th><?php echo $this->Paginator->sort('team'); ?></th>
 		<th><?php echo __('Description'); ?></th>
 	</tr>
 	<?php foreach ($category['User'] as $user): ?>
