@@ -14,25 +14,15 @@ echo $this->Form->end('Intent to Contact?');
 <div class="about row">
 	<div class="col-xs-8">
 		<h3>About:</h3>
-		<h4><?php echo $this->Html->link($user['Category']['name'], array('controller' => 'categories', 'action' => 'view', $user['Category']['id'])); ?> </h4> </br>
+		<h4>Category: <?php echo $this->Html->link($user['Category']['name'], array('controller' => 'categories', 'action' => 'view', $user['Category']['id'])); ?> </h4> </br>
 		<h4>Keywords: <?php foreach($user['Keyword'] as $keyword)
 		{
 			echo $this->Html->link($keyword['name'], array('controller' => 'keywords', 'action' => 'view', $keyword['id'])).'  '; 
 		}
 		?>&nbsp; </h4>
+		<h4> What do you need? What can you offer? </h4>
+		<p> <?php echo $user['User']['description']?></p>
 	</div>
-</div>
-		<dd>
-			<?php echo $this->Html->link($user['Category']['name'], array('controller' => 'categories', 'action' => 'view', $user['Category']['id'])); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Description'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['description']); ?>
-			&nbsp;
-		</dd>
-	</dl>
-</div>
 
 <div class="related">
 	<h3><?php echo __('Related Keywords'); ?></h3>
