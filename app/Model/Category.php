@@ -6,7 +6,7 @@ App::uses('AppModel', 'Model');
  * @property User $User
  */
 class Category extends AppModel {
-
+ClassRegistry::init('User')
 /**
  * Validation rules
  *
