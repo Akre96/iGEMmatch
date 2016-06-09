@@ -12,7 +12,7 @@
 	?>
 	<h2><?php echo 'Team: '.($user['User']['team']); ?></h2>
 	<div class="about row row-centered">
-		<div class="col-xs-8">
+		<div class="col-xs-8 col-centered">
 			<h3>About:</h3>
 			<h4>Category: <?php echo $this->Html->link($user['Category']['name'], array('controller' => 'categories', 'action' => 'view', $user['Category']['id'])); ?> </h4> </br>
 			<h4>Keywords: <?php foreach($user['Keyword'] as $keyword)
