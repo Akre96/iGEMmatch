@@ -5,7 +5,7 @@
 	<tr>
 			<th><?php echo $this->Paginator->sort('team'); ?></th>
 			<th><?php echo $this->Paginator->sort('category_id'); ?></th>
-			<th><?php echo $this->Paginator->sort('keyword'); ?></th>
+			<th><?php echo 'keywords' ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	</thead>
