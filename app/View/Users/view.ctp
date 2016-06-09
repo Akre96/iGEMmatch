@@ -24,7 +24,9 @@
 			?>&nbsp; </p>
 			<h4> What do you need? What can you offer? </h4>
 			<p> <?php echo $user['User']['description']?></p>
-			<h4></h4>
+			<h4>Contact information: </h4>
+			<p> Phone: <?php echo $user['User']['phone']?> </p>
+			<p> Email: <?php echo $user['User']['email']?> </p>
 		</div>
 
 	</div>
