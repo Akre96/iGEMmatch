@@ -47,5 +47,21 @@ class Category extends AppModel {
 			'counterQuery' => ''
 		)
 	);
-
+	public function getKeyWordsByUserId($userId = null) {
+	    if(empty($userId)) return false;
+	    $keywords = $this->find('all', array(
+	        'joins' => array(
+	             array('table' => 'keywords_users',
+	                'alias' => 'KeywordUsers',
+	                'type' => 'INNER',
+	                'conditions' => array(
+	                    'KeywordUsers.user_id' => $userId,
+	                    'KeywordUsers.keyword_id = keyword.id'
+	                )
+	            )
+	        ),
+	        'group' => 'keyword.id'
+	    ));
+	    return $keywords;
+	}
 }
