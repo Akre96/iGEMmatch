@@ -1,6 +1,5 @@
 <?php
 App::uses('AppModel', 'Model');
-ClassRegistry::init('User');
 /**
  * Category Model
  *
