@@ -58,6 +58,7 @@ public function beforeFilter() {
 		if ($contacted == 0)
 		{
 			$newContact = $contact.strval($id);
+			$this->set('new',$newContact);
 		}
 		if ($this->request->is('post'))
 		{
