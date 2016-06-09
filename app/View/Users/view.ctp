@@ -28,7 +28,7 @@
 	}
 	else
 	{
-		echo "<p class = 'bg-info'>You have indicated intent to contact this team</p>";
+		echo "<h3 class = 'infoP'>You have indicated intent to contact this team</h3>";
 	}
 
 	?>
