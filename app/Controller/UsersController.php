@@ -66,6 +66,7 @@ public function beforeFilter() {
 			$data = array('id' => $userId, 'contact' => $newContact);
 			$this->set('data',$data);
 			$this->User->save($data);
+			return $this->redirect(array('action' => 'view',$id));
 		}
 
 
