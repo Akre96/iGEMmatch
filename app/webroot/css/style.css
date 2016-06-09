@@ -105,5 +105,7 @@ a{
 }
 .infoP
 {
-	background-color: #9C0F00;
+	background-color: #FF7465;
+	border-radius: 25px;
+	color:white;
 }
