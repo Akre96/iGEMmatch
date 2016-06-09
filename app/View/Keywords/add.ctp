@@ -3,20 +3,14 @@
 	<fieldset>
 		<legend><?php echo __('Add Keyword'); ?></legend>
 	<?php
-		echo $this->Form->input('name');
+		echo $this->Form->input('name',array(
+        	'div' => array('class' => 'form-group'),
+ 			'label' => 'Name',
+ 			'class' => 'form-control'
+        	));
 		echo $this->Form->hidden('User.id');
 	?>
 	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
+<?php echo $this->Form->end(array('label'=>'Create','class'=>'btn btn-info')); ?>
 </div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
 
-		<li><?php echo $this->Html->link(__('List Keywords'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('List Keywords'), array('controller' => 'keywords', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Keyword'), array('controller' => 'keywords', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?> </li>
-	</ul>
-</div>
