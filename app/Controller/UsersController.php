@@ -39,19 +39,20 @@ public function beforeFilter() {
  */
 	public function view($id = null) {
 		$contact = $this->Auth->User('contact');
-
+		$contacted = 0;
 		if($contact)
 		{
 			$contacts= explode(',',$contact);
-		}
-
-		$contacted = 0;
-		foreach ($team as $contacts) {
+			foreach ($team as $contacts) {
 			if ($team == strval($id))
 			{
 				$contacted = 1;
 			}
 		}
+		}
+
+
+
 		
 		$this->set('contacted',$contacted);
 		if ($contacted == 0)
