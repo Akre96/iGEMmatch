@@ -94,7 +94,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<br/><br/><br/><br/><br/><hr/>
 			<div class ="row row-centered" >
 			<div class="col col-centered" id="footer">
-				<p>&copy; UC Davis iGem 2016</p>
+				<p>&copy; Samir Akre 2016</p>
 				<p>Direct all questions and concerns to <a href="mailto:ucdigem@gmail.com" targe="_blank">ucdigem@gmail.com</a></p>
 			</div>
 
