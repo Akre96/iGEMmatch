@@ -37,7 +37,7 @@
  			'class' => 'form-control'
         	));
 
-		echo $this->Html->link('Add Keyword','http://igemmatch.org/keywords/add',array('class' => 'btn btn-info');		
+		echo $this->Html->link('Add Keyword','http://igemmatch.org/keywords/add',array('class' => 'btn btn-info'));		
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
