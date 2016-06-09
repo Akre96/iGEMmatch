@@ -1,7 +1,7 @@
 <div class="users form">
 <?php echo $this->Form->create('User'); ?>
 	<fieldset>
-		<legend><?php echo __('Add User'); ?></legend>
+		<legend><?php echo __('Sign Up'); ?></legend>
 	<?php
 		echo $this->Form->input('username',array(
         	'div' => array('class' => 'form-group'),
