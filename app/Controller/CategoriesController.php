@@ -23,15 +23,6 @@ class CategoriesController extends AppController {
 	public function index() {
 	//	$this->Category->recursive = 0;
 		$categories = $this->Category->find('all');
-		foreach($categories as $cat)
-		{
-			if($cat['User'])
-			{
-				foreach ($cat['User'] as $user) {
-					$user['keywords'] = $this->Keyword->getKeyWordsByUserId($user['id']);
-				}
-			}
-		}
 		$this->set('categories', $categories);
 	//	$this->set('allUsers', $this->User->find('all'));
 	}
