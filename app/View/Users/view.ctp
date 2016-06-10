@@ -16,22 +16,23 @@
 			<h4> What do you need? What can you offer? </h4>
 			<p> <?php echo $user['User']['description']?></p>
 			<h4>Contact information: </h4>
-			<p> Phone: <?php echo $user['User']['phone']?> </p>
-			<p> Email: <?php echo $user['User']['email']?> </p>
-				<?php 
+	<?php
 	if (!$contacted)
 	{
 
 	echo $this->Form->create('User'); 
-	echo $this->Form->end(array('label'=>'Click here if you intend to contact this team.','class'=>'btn btn-danger'));
+	echo $this->Form->end(array('label'=>'Click here if you would like to contact this team.','class'=>'btn btn-danger'));
 
 	}
 	else
 	{
+
+		echo "<p> Phone:  ".$user['User']['phone'] ."</p>"
+		echo "<p> Email: ".$user['User']['email']." </p>"
 		echo "<h3 class = 'infoP'>You have indicated intent to contact this team</h3>";
 	}
-
 	?>
+
 		</div>
 
 	</div>
