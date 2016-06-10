@@ -21,7 +21,7 @@
 .catHold
 {
 	height: 30vh;
-	overflow: hidden;
+	overflow: scroll;
 	border-top: 1px solid #21B6A8;
 	border-bottom: 1px solid #21B6A8;
 	border-radius: 20px;
@@ -63,7 +63,7 @@ h1 a:hover
 	border-radius: 20px;
 	min-height: 200px;
 	text-align: center;
-	overflow:scroll;
+	overflow:hidden;
 	float:none;
 	background-color: rgb(83, 209, 111);
 	background-color: rgba(83, 209, 111,.6);
