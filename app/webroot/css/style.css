@@ -21,7 +21,7 @@
 .catHold
 {
 	height: 30vh;
-	overflow: scroll;
+	overflow: hidden;
 	border-top: 1px solid #21B6A8;
 	border-bottom: 1px solid #21B6A8;
 	border-radius: 20px;
