@@ -27,8 +27,8 @@
 	else
 	{
 
-		echo "<p> Phone:  ".$user['User']['phone'] ."</p>"
-		echo "<p> Email: ".$user['User']['email']." </p>"
+		echo "<p> Phone:  ".$user['User']['phone'] ."</p>";
+		echo "<p> Email: ".$user['User']['email']." </p>";
 		echo "<h3 class = 'infoP'>You have indicated intent to contact this team</h3>";
 	}
 	?>
