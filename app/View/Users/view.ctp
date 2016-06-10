@@ -29,7 +29,7 @@
 
 		echo "<p> Phone:  ".$user['User']['phone']."</p>";
 		echo "<p> Email: ".$user['User']['email']." </p>";
-		echo "<h3 class = 'infoP'>You have indicated intent to contact this team</h3>";
+		echo "<h3 class = 'infoP'>Please use the information above to contact this team.</h3>";
 	}
 	?>
 
