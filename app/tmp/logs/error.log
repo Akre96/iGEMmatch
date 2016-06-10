@@ -1448,3 +1448,80 @@ Stack Trace:
 #3 /home/jussie4/igemmatch.org/lib/Cake/Core/App.php(943): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2016-06-09 04:18:33 Error: Fatal Error (4): syntax error, unexpected ';' in [/home/jussie4/igemmatch.org/app/View/Users/edit.ctp, line 40]
+2016-06-09 04:18:33 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /users/edit/
+Stack Trace:
+#0 /home/jussie4/igemmatch.org/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/jussie4/i...', 40)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/jussie4/i...', 40, Array)
+#2 /home/jussie4/igemmatch.org/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/jussie4/i...', 40, Array)
+#3 /home/jussie4/igemmatch.org/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-09 04:18:38 Error: Fatal Error (4): syntax error, unexpected ';' in [/home/jussie4/igemmatch.org/app/View/Users/edit.ctp, line 40]
+2016-06-09 04:18:38 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /users/edit/
+Stack Trace:
+#0 /home/jussie4/igemmatch.org/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/jussie4/i...', 40)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/jussie4/i...', 40, Array)
+#2 /home/jussie4/igemmatch.org/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/jussie4/i...', 40, Array)
+#3 /home/jussie4/igemmatch.org/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-09 04:25:32 Error: Fatal Error (4): syntax error, unexpected 'endforeach' (T_ENDFOREACH) in [/home/jussie4/igemmatch.org/app/View/Keywords/view.ctp, line 20]
+2016-06-09 04:25:32 Error: [FatalErrorException] syntax error, unexpected 'endforeach' (T_ENDFOREACH)
+Request URL: /keywords/view/4
+Stack Trace:
+#0 /home/jussie4/igemmatch.org/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/jussie4/i...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/jussie4/i...', 20, Array)
+#2 /home/jussie4/igemmatch.org/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/jussie4/i...', 20, Array)
+#3 /home/jussie4/igemmatch.org/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-09 14:52:48 Error: [MissingControllerException] Controller class Robots.txtController could not be found.
+Exception Attributes: array (
+  'class' => 'Robots.txtController',
+  'plugin' => NULL,
+)
+Request URL: /robots.txt
+Stack Trace:
+#0 /home/jussie4/igemmatch.org/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-09 18:50:31 Error: [MissingControllerException] Controller class Robots.txtController could not be found.
+Exception Attributes: array (
+  'class' => 'Robots.txtController',
+  'plugin' => NULL,
+)
+Request URL: /robots.txt
+Stack Trace:
+#0 /home/jussie4/igemmatch.org/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-09 19:33:13 Error: [MissingControllerException] Controller class Robots.txtController could not be found.
+Exception Attributes: array (
+  'class' => 'Robots.txtController',
+  'plugin' => NULL,
+)
+Request URL: /robots.txt
+Stack Trace:
+#0 /home/jussie4/igemmatch.org/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-09 19:33:15 Error: [MissingActionException] Action CategoriesController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'add',
+)
+Request URL: /categories/add
+Stack Trace:
+#0 /home/jussie4/igemmatch.org/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/jussie4/igemmatch.org/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#2 /home/jussie4/igemmatch.org/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-06-10 11:59:00 Error: [MissingControllerException] Controller class Browserconfig.xmlController could not be found.
+Exception Attributes: array (
+  'class' => 'Browserconfig.xmlController',
+  'plugin' => NULL,
+)
+Request URL: /browserconfig.xml
+Stack Trace:
+#0 /home/jussie4/igemmatch.org/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
