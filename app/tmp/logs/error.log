@@ -1525,3 +1525,39 @@ Request URL: /browserconfig.xml
 Stack Trace:
 #0 /home/jussie4/igemmatch.org/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2016-06-10 12:36:00 Error: [MissingControllerException] Controller class Browserconfig.xmlController could not be found.
+Exception Attributes: array (
+  'class' => 'Browserconfig.xmlController',
+  'plugin' => NULL,
+)
+Request URL: /browserconfig.xml
+Stack Trace:
+#0 /home/jussie4/igemmatch.org/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-10 12:38:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.min.css.map
+Stack Trace:
+#0 /home/jussie4/igemmatch.org/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-10 12:38:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.min.css.map
+Stack Trace:
+#0 /home/jussie4/igemmatch.org/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-10 12:40:06 Error: [NotFoundException] Invalid category
+Request URL: /categories/view/19
+Stack Trace:
+#0 [internal function]: CategoriesController->view('19')
+#1 /home/jussie4/igemmatch.org/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#2 /home/jussie4/igemmatch.org/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/jussie4/igemmatch.org/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#4 /home/jussie4/igemmatch.org/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
