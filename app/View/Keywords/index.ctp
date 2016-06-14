@@ -9,7 +9,7 @@
 	<tbody>
 	<?php foreach ($keywords as $keyword): ?>
 	<tr>
-		<td><?php echo h($keyword['Keyword']['name']); ?>&nbsp;</td>
+		<td><?php echo $this->Html->link(($keyword['Keyword']['name']),array('action'=>'view',$keyword['Keyword']['id'])); ?>&nbsp;</td>
 	</tr>
 <?php endforeach; ?>
 	</tbody>
