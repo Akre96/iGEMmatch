@@ -9,7 +9,6 @@
 	<tbody>
 	<?php foreach ($keywords as $keyword): ?>
 	<tr>
-		<td><?php echo h($keyword['Keyword']['id']); ?>&nbsp;</td>
 		<td><?php echo h($keyword['Keyword']['name']); ?>&nbsp;</td>
 	</tr>
 <?php endforeach; ?>
