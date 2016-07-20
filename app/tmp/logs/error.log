@@ -5981,3 +5981,41 @@ Stack Trace:
 #9 /home/jussie4/igemmatch.org/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
 #10 /home/jussie4/igemmatch.org/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #11 {main}
+2016-07-20 15:20:36 Error: [MissingDatasourceConfigException] The datasource configuration "default" was not found in database.php
+Exception Attributes: array (
+  'config' => 'default',
+)
+Request URL: /categories
+Stack Trace:
+#0 /home/jussie4/igemmatch.org/lib/Cake/Model/ConnectionManager.php(91): ConnectionManager::_getConnectionObject('default')
+#1 /home/jussie4/igemmatch.org/lib/Cake/Model/Model.php(3626): ConnectionManager::getDataSource('default')
+#2 /home/jussie4/igemmatch.org/lib/Cake/Model/Model.php(1155): Model->setDataSource('default')
+#3 /home/jussie4/igemmatch.org/lib/Cake/Model/Model.php(3653): Model->setSource('categories')
+#4 /home/jussie4/igemmatch.org/lib/Cake/Model/Model.php(3031): Model->getDataSource()
+#5 /home/jussie4/igemmatch.org/lib/Cake/Model/Model.php(3003): Model->_readDataSource('all', Array)
+#6 /home/jussie4/igemmatch.org/app/Controller/CategoriesController.php(25): Model->find('all')
+#7 [internal function]: CategoriesController->index()
+#8 /home/jussie4/igemmatch.org/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#9 /home/jussie4/igemmatch.org/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/jussie4/igemmatch.org/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#11 /home/jussie4/igemmatch.org/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-07-20 15:20:57 Error: [MissingDatasourceConfigException] The datasource configuration "default" was not found in database.php
+Exception Attributes: array (
+  'config' => 'default',
+)
+Request URL: /
+Stack Trace:
+#0 /home/jussie4/igemmatch.org/lib/Cake/Model/ConnectionManager.php(91): ConnectionManager::_getConnectionObject('default')
+#1 /home/jussie4/igemmatch.org/lib/Cake/Model/Model.php(3626): ConnectionManager::getDataSource('default')
+#2 /home/jussie4/igemmatch.org/lib/Cake/Model/Model.php(1155): Model->setDataSource('default')
+#3 /home/jussie4/igemmatch.org/lib/Cake/Model/Model.php(3653): Model->setSource('categories')
+#4 /home/jussie4/igemmatch.org/lib/Cake/Model/Model.php(3031): Model->getDataSource()
+#5 /home/jussie4/igemmatch.org/lib/Cake/Model/Model.php(3003): Model->_readDataSource('all', Array)
+#6 /home/jussie4/igemmatch.org/app/Controller/CategoriesController.php(32): Model->find('all')
+#7 [internal function]: CategoriesController->home()
+#8 /home/jussie4/igemmatch.org/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#9 /home/jussie4/igemmatch.org/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/jussie4/igemmatch.org/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#11 /home/jussie4/igemmatch.org/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
