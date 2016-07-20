@@ -2,4 +2,4 @@ app/Config/core.php
 app/Config/database.php
 database.php
 core.php
-
+app/tmp/*
