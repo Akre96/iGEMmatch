@@ -18,4 +18,6 @@
     ?>
     </fieldset>
 <?php echo $this->Form->end(array('label'=>'Login','class'=>'btn btn-default')); ?>
+
+<p>If you are having issues logging in please email ucdigem@gmail.com</p>
 </div>

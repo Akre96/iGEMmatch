@@ -31,27 +31,17 @@
  			'label' => 'What can your team offer and what is it looking for?',
  			'class' => 'form-control'
         	));
+		echo $this->Html->link('Add Keyword','http://igemmatch.org/keywords/add',array('class' => 'btn btn-info'));	
 		echo $this->Form->input('Keyword',array(
         	'div' => array('class' => 'form-group'),
  			'label' => 'Pick 3 keywords specific to your project',
  			'class' => 'form-control'
         	));
 
-		echo $this->Html->link('Add Keyword','http://igemmatch.org/keywords/add',array('class' => 'btn btn-info'));		
+	
 	?>
 	</fieldset>
 </br>
 <?php echo $this->Form->end(array('label'=>'Update Profile','class'=>'btn btn-primary')); ?>
 </div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
 
-		<li><?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $this->Form->value('User.id')), array('confirm' => __('Are you sure you want to delete # %s?', $this->Form->value('User.id')))); ?></li>
-		<li><?php echo $this->Html->link(__('List Users'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('List Categories'), array('controller' => 'categories', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Category'), array('controller' => 'categories', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Keywords'), array('controller' => 'keywords', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Keyword'), array('controller' => 'keywords', 'action' => 'add')); ?> </li>
-	</ul>
-</div>
