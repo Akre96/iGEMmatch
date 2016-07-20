@@ -22,6 +22,7 @@ public function beforeFilter() {
 
     public $paginate = array(
         'limit' => 200,
+        'maxLimit'=>200,
     );
 
 /**
