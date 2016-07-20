@@ -20,6 +20,10 @@ public function beforeFilter() {
  */
 	public $components = array('Paginator');
 
+    public $paginate = array(
+        'limit' => 200,
+    );
+
 /**
  * index method
  *
