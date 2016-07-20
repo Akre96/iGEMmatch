@@ -10,7 +10,7 @@
  			'label' => 'Team Name',
  			'class' => 'form-control'
         	));
-		echo $this->Form->hidden('password');
+//		echo $this->Form->hidden('password');
 		echo $this->Form->input('email',array(
         	'div' => array('class' => 'form-group'),
  			'label' => 'Email',
