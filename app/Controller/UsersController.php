@@ -31,7 +31,7 @@ public function beforeFilter() {
  */
 	public function index() {
 	//	$this->User->recursive = 0;
-		$this->set('users', $this->paginate('users'));
+		$this->set('users', $this->paginate('User'));
 	}
 
 /**
