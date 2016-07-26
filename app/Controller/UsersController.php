@@ -25,7 +25,7 @@ public function beforeFilter() {
                'alias' => 'KeywordsUser', 
   	            'type' => 'INNER',  
               'conditions'=> array('KeywordsUser.keyword_id = Keyword.id') 
-           ); 
+           ) 
 
            );
 /**
