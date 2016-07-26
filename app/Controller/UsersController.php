@@ -20,10 +20,21 @@ public function beforeFilter() {
  */
 	public $components = array('Paginator');
 
-    public $paginate = array(
- 			
-    );
-
+	var $paginate = array('joins' => array(
+     array( 
+               'table' => 'keywords_users', 
+               'alias' => 'KeywordsUser', 
+               'type' => 'inner',  
+               'conditions'=> array('KeywordsUser.keyword_id = Keyword.id') 
+           ), 
+           array( 
+               'table' => 'keywords', 
+               'alias' => 'Keyword', 
+               'type' => 'inner',  
+               'conditions'=> array( 
+                   'Keyword.id = KeywordsUser.user_id'
+               ) 
+           )));
 /**
  * index method
  *
