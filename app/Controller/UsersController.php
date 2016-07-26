@@ -25,14 +25,14 @@ public function beforeFilter() {
                'table' => 'keywords_users', 
                'alias' => 'KeywordsUser', 
                'type' => 'inner',  
-               'conditions'=> array('KeywordsUser.keyword_id = Keyword.id') 
+//               'conditions'=> array('KeywordsUser.keyword_id = Keyword.id') 
            ), 
            array( 
                'table' => 'keywords', 
                'alias' => 'Keyword', 
                'type' => 'inner',  
                'conditions'=> array( 
-                   'Keyword.id = KeywordsUser.user_id'
+ //                  'Keyword.id = KeywordsUser.user_id'
                ) 
            )));
 /**
@@ -41,7 +41,7 @@ public function beforeFilter() {
  * 
  */
 	public function index() {
-//		$this->Paginator->settings = $this->paginate;
+		$this->Paginator->settings = $this->paginate;
 
 		$this->set('users', $this->Paginator->paginate('User'));
 	}
