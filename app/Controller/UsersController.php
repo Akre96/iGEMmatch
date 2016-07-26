@@ -16,7 +16,7 @@ public function beforeFilter() {
 /**
  * Components
  *
- * @var array
+ * 
  */
 	public $components = array('Paginator');
 
@@ -38,11 +38,12 @@ public function beforeFilter() {
 /**
  * index method
  *
- * @return void
+ * 
  */
 	public function index() {
-	//	$this->User->recursive = 0;
-		$this->set('users', $this->paginate('User'));
+		$this->Paginator->settings = $this->paginate;
+		
+		$this->set('users', $this->Paginator->paginate('User'));
 	}
 
 /**
