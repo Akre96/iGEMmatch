@@ -20,14 +20,7 @@ public function beforeFilter() {
  */
 	public $components = array('Paginator');
 
-	var $paginate = array('joins' => array( 
-               'table' => 'keywords_users', 
-               'alias' => 'KeywordsUser', 
-  	            'type' => 'INNER',  
-              'conditions'=> array('KeywordsUser.keyword_id = Keyword.id') 
-           ) 
 
-           );
 /**
  * index method
  *
@@ -35,7 +28,14 @@ public function beforeFilter() {
  */
 	public function index() {
 //		$this->Paginator->settings = $this->paginate;
+	 $paginate = array('joins' => array( 
+               'table' => 'keywords_users', 
+               'alias' => 'KeywordsUser', 
+  	            'type' => 'INNER',  
+              'conditions'=> array('KeywordsUser.keyword_id = Keyword.id') 
+           ) 
 
+           );
 		$this->set('users', $this->Paginator->paginate('User',$paginate));
 	}
 
