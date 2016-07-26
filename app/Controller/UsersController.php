@@ -20,7 +20,7 @@ public function beforeFilter() {
  */
 	public $components = array('Paginator');
 
-	public $paginate = array('joins' => array( 
+	var $paginate = array('joins' => array( 
                'table' => 'keywords_users', 
                'alias' => 'KeywordsUser', 
   	            'type' => 'INNER',  
