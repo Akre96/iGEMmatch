@@ -36,7 +36,7 @@ public function beforeFilter() {
            ) 
 
            );
-		$this->set('users', $this->Paginator->paginate('User',$paginate));
+		$this->set('users', $this->Paginator->paginate('User'));
 	}
 
 /**
