@@ -21,8 +21,7 @@ public function beforeFilter() {
 	public $components = array('Paginator');
 
     public $paginate = array(
-        'limit' => 200,
-        'maxLimit'=>200,
+ 			
     );
 
 /**
@@ -32,7 +31,7 @@ public function beforeFilter() {
  */
 	public function index() {
 	//	$this->User->recursive = 0;
-		$this->set('users', $this->Paginator->paginate());
+		$this->set('users', $this->paginate('users'));
 	}
 
 /**
