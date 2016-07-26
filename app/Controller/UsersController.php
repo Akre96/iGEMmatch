@@ -41,7 +41,7 @@ public function beforeFilter() {
  * 
  */
 	public function index() {
-		$this->Paginator->settings = $this->paginate;
+//		$this->Paginator->settings = $this->paginate;
 
 		$this->set('users', $this->Paginator->paginate('User'));
 	}
