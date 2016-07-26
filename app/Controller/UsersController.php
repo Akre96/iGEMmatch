@@ -32,7 +32,7 @@ public function beforeFilter() {
  */
 	public function index() {
 	//	$this->User->recursive = 0;
-		$this->set('users', $this->Paginator->paginate($paginate));
+		$this->set('users', $this->Paginator->paginate());
 	}
 
 /**
