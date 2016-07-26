@@ -38,7 +38,7 @@
  			'class' => 'form-control'
         	));
 
-		echo "<p><strong>OR</strong></p></br>";
+		echo "<p><strong>OR</strong></p>";
 
 		echo $this->Html->link('Create New Keyword','http://igemmatch.org/keywords/add',array('class' => 'btn btn-info'));	
 
