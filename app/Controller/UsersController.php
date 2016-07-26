@@ -32,7 +32,7 @@ public function beforeFilter() {
                'alias' => 'Keyword', 
                'type' => 'inner',  
                'conditions'=> array( 
-                   'Keyword.id = KeywordsUser.user_id'
+                   'Keyword.id = KeywordsUser.User_id'
                ) 
            )));
 /**
@@ -42,7 +42,7 @@ public function beforeFilter() {
  */
 	public function index() {
 		$this->Paginator->settings = $this->paginate;
-		
+
 		$this->set('users', $this->Paginator->paginate('User'));
 	}
 
