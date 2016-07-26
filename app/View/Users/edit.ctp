@@ -31,12 +31,16 @@
  			'label' => 'What can your team offer and what is it looking for?',
  			'class' => 'form-control'
         	));
-		echo $this->Html->link('Create New Keyword','http://igemmatch.org/keywords/add',array('class' => 'btn btn-info'));	
+
 		echo $this->Form->input('Keyword',array(
         	'div' => array('class' => 'form-group'),
  			'label' => 'Pick 3 keywords specific to your project',
  			'class' => 'form-control'
         	));
+
+		echo "<p><strong>OR</strong></p></br>";
+
+		echo $this->Html->link('Create New Keyword','http://igemmatch.org/keywords/add',array('class' => 'btn btn-info'));	
 
 	
 	?>
