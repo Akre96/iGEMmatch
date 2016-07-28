@@ -9,7 +9,7 @@
 	{
 		echo "<div class = 'row row-centered'>";
 	}
-	echo "<div class='catHold col-sm-3 col-xs-10 col-centered'>";
+	echo "<div class='catHold col-sm-4 col-xs-10 col-centered'>";
 		echo "<h3><a href='http://www.igemmatch.org/categories/view/".$cat['Category']['id']."'>".$cat['Category']['name']."</a></h3>";
 
 		if(!empty($cat['User']))
