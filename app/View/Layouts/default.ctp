@@ -66,7 +66,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 
 			      </ul>
 			      <ul class="nav navbar-nav navbar-right">
-					  <li>				
+					 <!-- Search Currently does not work 
+					 <li>				
 					  <div>
 						<script>
 						(function() {
@@ -82,6 +83,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 						<gcse:search></gcse:search>
 						</div>
 					  </li>
+					   -->
 				  
 							<?php
 							if($this->Session->check('Auth.User'))
