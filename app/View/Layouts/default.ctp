@@ -66,6 +66,23 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 
 			      </ul>
 			      <ul class="nav navbar-nav navbar-right">
+					  <li>				
+					  <div>
+						<script>
+						(function() {
+						var cx = '015898431893390556779:8rruwcdblw0';
+						var gcse = document.createElement('script');
+						gcse.type = 'text/javascript';
+						gcse.async = true;
+						gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+						var s = document.getElementsByTagName('script')[0];
+						s.parentNode.insertBefore(gcse, s);
+						})();
+						</script>
+						<gcse:search></gcse:search>
+						</div>
+					  </li>
+				  
 							<?php
 							if($this->Session->check('Auth.User'))
 							{			
