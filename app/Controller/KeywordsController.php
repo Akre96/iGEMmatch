@@ -14,15 +14,19 @@ class KeywordsController extends AppController {
  * @var array
  */
 	public $components = array('Paginator');
-
+    public function beforeFilter()
+    {
+    	$this->Auth->allow('view','index');
+    }
 /**
  * index method
  *
  * @return void
  */
 	public function index() {
-		$this->Keyword->recursive = 0;
-		$this->set('keywords', $this->Paginator->paginate());
+		$keywords = $this->Keyword->find('all',array('order'=>'name'));
+		$this->set('keywords',$keywords);
+
 	}
 
 /**

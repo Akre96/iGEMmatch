@@ -28,9 +28,10 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<?php
 		echo $this->Html->meta('icon');
 
-//		echo $this->Html->css('cake.generic');
+		echo $this->Html->css('normalize.css');
 		echo $this->Html->css('bootstrap.min.css');
 		echo $this->Html->css('style.css');
+
 		echo $this->Html->script('jquery-2.2.4.min.js');
 		echo $this->Html->script('bootstrap.min.js');
 		echo '<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
@@ -60,9 +61,10 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			    <!-- Collect the nav links, forms, and other content for toggling -->
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			      <ul class="nav navbar-nav">
-			        <li><?php echo $this->Html->link('Home',array('controller' => 'categories',  'action' => 'home')); ?></li>			      	
-			        <li><?php echo $this->Html->link('Users',array('controller'=>'users','action'=>'index')); ?></li>
-			        <li><?php echo $this->Html->link('iGem Tracks',array('controller' => 'categories',  'action' => 'index'));?></li>
+			        <li><?php echo $this->Html->link('Home',array('controller' => 'categories',  'action' => 'home')); ?></li>	
+			        <li><?php echo $this->Html->link('iGem Tracks',array('controller' => 'categories',  'action' => 'index'));?></li>		      	
+			        <li><?php echo $this->Html->link('Users',array('controller'=>'users','action'=>'index')); ?></li>			       
+			        <li><?php echo $this->Html->link('Keywords',array('controller' => 'keywords',  'action' => 'index'));?></li>
 
 			      </ul>
 			      <ul class="nav navbar-nav navbar-right">
