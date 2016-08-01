@@ -27,7 +27,7 @@ public function beforeFilter() {
  * 
  */
 	public function index() {
-//		$this->Paginator->settings = $this->paginate;
+		$this->Paginator->settings = array('order'=>'User.team');
 		$this->set('users', $this->Paginator->paginate('User'));
 	}
 

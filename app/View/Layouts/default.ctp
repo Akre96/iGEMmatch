@@ -88,14 +88,14 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 							<?php
 							if($this->Session->check('Auth.User'))
 							{			
-								echo '<li>';echo $this->Html->link($this->Session->read('Auth.User.team'), 'http://igemmatch.org/users/view/'.$this->Session->read('Auth.User.id'));echo '</li>';	
-								echo '<li>';echo $this->Html->link('logout', 'http://igemmatch.org/users/logout');echo '</li>';
-								echo '<li>'.$this->Html->link('Edit Profile', 'http://igemmatch.org/users/edit/').'</li>';
+								echo '<li>';echo $this->Html->link($this->Session->read('Auth.User.team'),array('controller'=>'users','action'=>'view',$this->Session->read('Auth.User.id')));echo '</li>';	
+								echo '<li>';echo $this->Html->link('logout', array('controller'=>'users','action'=>'logout'));echo '</li>';
+								echo '<li>'.$this->Html->link('Edit Profile', array('controller'=>'users','action'=>'edit')).'</li>';
 							}
 							else
 							{
-							echo '<li>';echo $this->Html->link('login', 'http://igemmatch.org/users/login');echo '</li>';
-							echo '<li>';echo $this->Html->link('sign up', 'http://igemmatch.org/users/add');echo '</li>';
+							echo '<li>';echo $this->Html->link('login', array('controller'=>'users','action'=>'login'));echo '</li>';
+							echo '<li>';echo $this->Html->link('sign up', array('controller'=>'users','action'=>'add'));echo '</li>';
 							}
 							?>
 			      </ul>

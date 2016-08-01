@@ -7,7 +7,10 @@ App::uses('AppController', 'Controller');
  * @property PaginatorComponent $Paginator
  */
 class CategoriesController extends AppController {
-
+    public function beforeFilter()
+    {
+    	$this->Auth->allow('home','view','index');
+    }
 /**
  * Components
  *

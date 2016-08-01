@@ -10,13 +10,17 @@
     margin-right:-4px;
 }
 
-.catCont
+.catCont a 
 {
 	border-left:2px; 
 	border-right: 2px;
 	border-color: red;
 	border-radius: 5px;
 	color: #9C4C00;
+}
+.catCont a:hover
+{
+	text-decoration: none;
 }
 .catHold
 {

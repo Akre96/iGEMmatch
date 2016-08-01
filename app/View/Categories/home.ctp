@@ -22,7 +22,7 @@
 <div class = "row row-centered" id = "categoryHome">
 <?php foreach($categories as $cat): ?>
 <div class = "col-xs-3 col-centered catCont">
-	<h2><?php echo $cat['Category']['name']?></h2>
+	<h2><?php echo $this->Html->link($cat['Category']['name'],array('controller'=>'categories','action'=>'view',$cat['Category']['id'])); ?></h2>
 </div>
 
 
