@@ -24,9 +24,8 @@ class KeywordsController extends AppController {
  * @return void
  */
 	public function index() {
-		$keywords = $this->Keyword->find('all',array('order'=>'name'));
-		$this->set('keywords',$keywords);
-
+		$this->Paginator->settings = array('order'=>'Keyword.name');
+		$this->set('keywords', $this->Paginator->paginate('Keyword'));
 	}
 
 /**

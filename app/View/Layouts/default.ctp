@@ -28,8 +28,9 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<?php
 		echo $this->Html->meta('icon');
 
-		echo $this->Html->css('normalize.css');
+
 		echo $this->Html->css('bootstrap.min.css');
+		echo $this->Html->css('normalize.css');
 		echo $this->Html->css('style.css');
 
 		echo $this->Html->script('jquery-2.2.4.min.js');
@@ -62,8 +63,10 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			      <ul class="nav navbar-nav">
 			        <li><?php echo $this->Html->link('Home',array('controller' => 'categories',  'action' => 'home')); ?></li>	
+			        <li><?php echo $this->Html->link('All Users',array('controller'=>'users','action'=>'index')); ?></li>
+			        <li><p class="navbar-text" id="navtext">Sort by: </p></li>
 			        <li><?php echo $this->Html->link('iGem Tracks',array('controller' => 'categories',  'action' => 'index'));?></li>		      	
-			        <li><?php echo $this->Html->link('Users',array('controller'=>'users','action'=>'index')); ?></li>			       
+			        			       
 			        <li><?php echo $this->Html->link('Keywords',array('controller' => 'keywords',  'action' => 'index'));?></li>
 
 			      </ul>
